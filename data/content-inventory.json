@@ -1,5 +1,6 @@
 {
   "updated": "2026-07-08",
+  "siteDomain": "https://windowplantlab.com",
   "pages": [
     {
       "path": "/",
@@ -11,6 +12,8 @@
         "houseplant light estimator",
         "where to put houseplants in apartment"
       ],
+      "canonical": "https://windowplantlab.com/",
+      "indexed": "unknown",
       "lastUpdated": "2026-07-08"
     },
     {
@@ -23,6 +26,8 @@
         "houseplant window light estimator",
         "plant light by window direction"
       ],
+      "canonical": "https://windowplantlab.com/light-meter/",
+      "indexed": "unknown",
       "lastUpdated": "2026-07-08"
     },
     {
@@ -35,6 +40,8 @@
         "how far from window for plants",
         "plant distance from window calculator"
       ],
+      "canonical": "https://windowplantlab.com/plant-distance-calculator/",
+      "indexed": "unknown",
       "lastUpdated": "2026-07-08"
     },
     {
@@ -47,6 +54,8 @@
         "north facing window plants apartment",
         "plants for north window"
       ],
+      "canonical": "https://windowplantlab.com/north-facing-window-plants/",
+      "indexed": "unknown",
       "lastUpdated": "2026-07-08"
     },
     {
@@ -59,6 +68,8 @@
         "low light plant placement checklist",
         "can plants survive in low light apartment"
       ],
+      "canonical": "https://windowplantlab.com/low-light-plant-placement-checklist/",
+      "indexed": "unknown",
       "lastUpdated": "2026-07-08"
     }
   ]

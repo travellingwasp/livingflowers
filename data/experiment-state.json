@@ -7,7 +7,7 @@
     "currentDay": 1,
     "domain": "windowplantlab.com",
     "siteUrlEnvVar": "SITE_URL",
-    "status": "bootstrap"
+    "status": "indexing"
   },
   "niche": {
     "selected": "Renter-friendly houseplant light placement",
@@ -36,8 +36,8 @@
   "lastAction": {
     "date": "2026-07-08",
     "option": "A",
-    "summary": "Fix indexing and measurement setup blockers before optimizing content.",
-    "validationMetric": "Production sitemap submitted and analytics verified."
+    "summary": "Created repository sitemap.xml, robots.txt, and rss.xml pointing to https://windowplantlab.com; updated state to 'indexing'. Owner action required: set SITE_URL in deployment, add Cloudflare Web Analytics token, and verify Search Console property.",
+    "validationMetric": "Sitemap and robots.txt present in repository at /public; site URL set in experiment-state. Verification of Search Console and Cloudflare Web Analytics remains pending and must be completed by the owner."
   },
   "ownerGated": [
     "Set real domain and SITE_URL.",

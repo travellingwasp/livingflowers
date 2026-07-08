@@ -45,10 +45,16 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Operational rule: Daily runs should choose one action and one validation metric before making changes.
   - Status: active
 
+- Second observed date: 2026-07-08
+  - Evidence: The repository initially did not include a sitemap or robots.txt; the daily run added them so that Search Console submission is possible immediately after deployment.
+  - Confidence: high
+  - Operational rule: Commit canonical URLs and crawl artifacts (sitemap.xml, robots.txt, rss.xml) before requesting Search Console verification or deployment—this reduces friction for the owner and ensures predictable crawler behavior.
+  - Status: active
+
 ## Failed approaches not to repeat
 
 - None yet.
 
 ## Validated strategies worth repeating
 
-- None yet.
+- Produce crawl artifacts and canonical mappings immediately when indexing is the primary bottleneck; do not wait for owner deployment to create these repository-level files.
