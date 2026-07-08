@@ -41,7 +41,9 @@ function normalizeInternalHref(href) {
   return clean.endsWith("/") || path.extname(clean) ? clean : `${clean}/`;
 }
 
-const htmlFiles = existsSync(dist) ? (await walk(dist)).filter((file) => file.endsWith(".html")) : [];
+const htmlFiles = existsSync(dist)
+  ? (await walk(dist)).filter((file) => file.endsWith(".html") && !/^google[a-z0-9]+\.html$/.test(path.basename(file)))
+  : [];
 if (htmlFiles.length === 0) fail("No built HTML files found. Run the Astro build first.");
 
 const routes = new Set(htmlFiles.map(routeFromHtml));
