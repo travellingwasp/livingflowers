@@ -5,7 +5,7 @@
     "startDate": "2026-07-08",
     "lengthDays": 30,
     "currentDay": 1,
-    "domain": "UNSET",
+    "domain": "windowplantlab.com",
     "siteUrlEnvVar": "SITE_URL",
     "status": "bootstrap"
   },
