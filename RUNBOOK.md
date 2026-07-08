@@ -39,14 +39,23 @@ Do not deploy with the default `https://example.com` value.
 
 ## Daily Operation
 
-Run:
+Local deterministic fallback:
 
 ```bash
 npm run daily
 npm run check
 ```
 
-Then create a branch, commit, and open a pull request according to repository policy.
+GitHub Actions daily operation:
+
+- Workflow: `.github/workflows/daily-codex.yml`
+- Prompt: `.github/daily-codex-prompt.md`
+- Runner: `scripts/autonomous-openai-run.mjs`
+- Required repository secret: `OPENAI_API_KEY`
+- Optional repository variable: `OPENAI_MODEL` defaults to `gpt-5-mini`
+- Required repository variable: `SITE_URL`
+
+The workflow calls the OpenAI Responses API, applies structured file edits, runs checks, and opens a pull request when files changed.
 
 Daily decision options:
 

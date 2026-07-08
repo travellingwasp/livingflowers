@@ -19,7 +19,11 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm run daily
+      - name: Run OpenAI autonomous daily operation
+        run: node scripts/autonomous-openai-run.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
       - run: npm run check
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://example.com' }}
@@ -30,7 +34,9 @@ jobs:
           commit-message: "Run daily traffic experiment update"
           title: "Daily traffic experiment update"
           body: |
-            Automated daily operation.
+            Automated daily operation using OpenAI API.
+
+            The run writes its concise report to `data/daily-openai-report.md`.
 
             Review:
             - `data/experiment-state.json`
