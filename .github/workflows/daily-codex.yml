@@ -28,6 +28,7 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://example.com' }}
       - name: Create daily pull request
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           branch: codex/daily-traffic-experiment
@@ -43,3 +44,8 @@ jobs:
             - `data/content-inventory.json`
             - `journal/`
             - `LESSONS_LEARNED.md`
+      - name: Enable auto-merge for daily pull request
+        if: steps.cpr.outputs.pull-request-number != ''
+        run: gh pr merge "${{ steps.cpr.outputs.pull-request-number }}" --auto --squash
+        env:
+          GH_TOKEN: ${{ github.token }}
