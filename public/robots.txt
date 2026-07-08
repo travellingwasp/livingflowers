@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap provided for Search Console and crawlers
+Sitemap: https://windowplantlab.com/sitemap.xml
