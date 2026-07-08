@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LightEstimator from "../components/LightEstimator.astro";
+import WindowDiagram from "../components/WindowDiagram.astro";
+---
+
+<BaseLayout
+  title="WindowPlant Lab"
+  description="Renter-friendly houseplant light placement tools and practical guides for choosing the right plant spot before leaves start complaining."
+  canonicalPath="/"
+>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Houseplant light placement for renters</p>
+      <h1>Find the brightest workable plant spot before you buy another plant.</h1>
+      <p class="lede">
+        WindowPlant Lab turns window direction, distance, and obstruction into practical plant placement decisions.
+        The goal is fewer doomed corners, fewer scorched leaves, and better first guesses.
+      </p>
+      <div class="actions">
+        <a class="button" href="/light-meter/">Use the light estimator</a>
+        <a class="button secondary" href="/plant-distance-calculator/">Calculate placement distance</a>
+      </div>
+    </div>
+    <WindowDiagram />
+  </section>
+
+  <LightEstimator />
+
+  <section>
+    <h2>Start with the problem you have</h2>
+    <div class="grid">
+      <article class="panel">
+        <h3>North-facing apartment window</h3>
+        <p>Choose plants and positions that tolerate cooler, indirect light without pretending the room is brighter than it is.</p>
+        <a href="/north-facing-window-plants/">Read the guide</a>
+      </article>
+      <article class="panel">
+        <h3>Unknown plant distance</h3>
+        <p>Translate window direction and room depth into a starting zone for low, medium, or bright-indirect plants.</p>
+        <a href="/plant-distance-calculator/">Open the calculator</a>
+      </article>
+      <article class="panel">
+        <h3>Low-light shopping list</h3>
+        <p>Use a checklist to separate genuinely tolerant plants from plants that only survive briefly in dim rooms.</p>
+        <a href="/low-light-plant-placement-checklist/">Use the checklist</a>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

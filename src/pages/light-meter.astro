@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LightEstimator from "../components/LightEstimator.astro";
+---
+
+<BaseLayout
+  title="Houseplant Window Light Estimator"
+  description="Estimate houseplant light from window direction, distance from glass, and obstruction before choosing a plant location."
+  canonicalPath="/light-meter/"
+>
+  <section class="content">
+    <p class="eyebrow">Flagship tool</p>
+    <h1>Houseplant Window Light Estimator</h1>
+    <p class="lede">
+      This tool gives a conservative starting estimate for apartment plant placement. It is not a replacement for a real light meter,
+      but it is useful when you need to decide where to put a plant today.
+    </p>
+  </section>
+  <LightEstimator />
+  <section class="content">
+    <h2>How to validate the estimate</h2>
+    <ul>
+      <li>Check for leaning or longer gaps between leaves after two to four weeks.</li>
+      <li>Move sun-sensitive leaves back if they bleach, crisp, or develop pale patches.</li>
+      <li>Prefer a phone lux app or dedicated meter when placing expensive or flowering plants.</li>
+    </ul>
+    <div class="callout">
+      <strong>Evidence label:</strong> This is a practical decision aid based on common indoor-light patterns, not laboratory measurement.
+      Future experiment updates should replace assumptions with measured lux readings from repeatable room setups.
+    </div>
+  </section>
+</BaseLayout>

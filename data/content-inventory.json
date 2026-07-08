@@ -1,0 +1,65 @@
+{
+  "updated": "2026-07-08",
+  "pages": [
+    {
+      "path": "/",
+      "type": "home",
+      "status": "published",
+      "primaryProblem": "Help renters pick a plant placement workflow.",
+      "originalUtility": "Embedded window light estimator and placement diagram.",
+      "targetQueries": [
+        "houseplant light estimator",
+        "where to put houseplants in apartment"
+      ],
+      "lastUpdated": "2026-07-08"
+    },
+    {
+      "path": "/light-meter/",
+      "type": "tool",
+      "status": "published",
+      "primaryProblem": "Estimate indoor plant light without a dedicated light meter.",
+      "originalUtility": "Interactive estimator using window direction, distance, and obstruction.",
+      "targetQueries": [
+        "houseplant window light estimator",
+        "plant light by window direction"
+      ],
+      "lastUpdated": "2026-07-08"
+    },
+    {
+      "path": "/plant-distance-calculator/",
+      "type": "tool",
+      "status": "published",
+      "primaryProblem": "Choose a starting distance from a window for a plant.",
+      "originalUtility": "Interactive distance calculator with obstruction caveats.",
+      "targetQueries": [
+        "how far from window for plants",
+        "plant distance from window calculator"
+      ],
+      "lastUpdated": "2026-07-08"
+    },
+    {
+      "path": "/north-facing-window-plants/",
+      "type": "guide",
+      "status": "published",
+      "primaryProblem": "Choose plants for a north-facing apartment window.",
+      "originalUtility": "Selection table with placement zones and failure signs.",
+      "targetQueries": [
+        "north facing window plants apartment",
+        "plants for north window"
+      ],
+      "lastUpdated": "2026-07-08"
+    },
+    {
+      "path": "/low-light-plant-placement-checklist/",
+      "type": "checklist",
+      "status": "published",
+      "primaryProblem": "Decide if a dim apartment spot can support a living plant.",
+      "originalUtility": "Pass/fail placement checklist and decision tree.",
+      "targetQueries": [
+        "low light plant placement checklist",
+        "can plants survive in low light apartment"
+      ],
+      "lastUpdated": "2026-07-08"
+    }
+  ]
+}

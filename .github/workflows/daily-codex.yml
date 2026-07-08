@@ -1,0 +1,39 @@
+name: Daily Codex Operation
+
+on:
+  schedule:
+    - cron: "15 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run daily
+      - run: npm run check
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://example.com' }}
+      - name: Create daily pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: codex/daily-traffic-experiment
+          commit-message: "Run daily traffic experiment update"
+          title: "Daily traffic experiment update"
+          body: |
+            Automated daily operation.
+
+            Review:
+            - `data/experiment-state.json`
+            - `data/content-inventory.json`
+            - `journal/`
+            - `LESSONS_LEARNED.md`

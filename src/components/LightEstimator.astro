@@ -1,0 +1,78 @@
+<section class="tool-panel" aria-labelledby="light-estimator-title">
+  <h2 id="light-estimator-title">Window Light Estimator</h2>
+  <p>
+    Estimate plant placement from window direction, distance, and common shade conditions.
+    Use it as a first-pass map, then adjust when leaves stretch, scorch, or stall.
+  </p>
+  <div class="two-column">
+    <form id="light-estimator" class="panel">
+      <label>
+        Window direction
+        <select name="direction">
+          <option value="north">North-facing</option>
+          <option value="east">East-facing</option>
+          <option value="south">South-facing</option>
+          <option value="west">West-facing</option>
+        </select>
+      </label>
+      <label>
+        Distance from glass, in feet
+        <input name="distance" type="number" min="0" max="20" step="0.5" value="3" />
+      </label>
+      <label>
+        Obstruction
+        <select name="shade">
+          <option value="clear">Clear view of sky</option>
+          <option value="partial">Tree, balcony, screen, or nearby building</option>
+          <option value="heavy">Deep overhang or blocked sky</option>
+        </select>
+      </label>
+    </form>
+    <div>
+      <p class="result" id="light-result" aria-live="polite"></p>
+      <table>
+        <thead>
+          <tr><th>Rating</th><th>Best-fit plants</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bright direct</td><td>Succulents, cacti, herbs near the glass</td></tr>
+          <tr><td>Bright indirect</td><td>Ficus, hoya, monstera, many flowering plants</td></tr>
+          <tr><td>Medium</td><td>Pothos, philodendron, peperomia, calathea</td></tr>
+          <tr><td>Low</td><td>ZZ plant, snake plant, cast iron plant; slower growth expected</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.querySelector("#light-estimator");
+  const result = document.querySelector("#light-result");
+  const base: Record<string, number> = { north: 2, east: 3, south: 4, west: 4 };
+  const labels = ["Very low", "Low", "Medium", "Bright indirect", "Bright direct"];
+
+  function estimate() {
+    if (!(form instanceof HTMLFormElement) || !result) return;
+    const data = new FormData(form);
+    const direction = String(data.get("direction"));
+    const distance = Number(data.get("distance") || 0);
+    const shade = String(data.get("shade"));
+    let score = base[direction] ?? 2;
+    score -= Math.floor(distance / 4);
+    if (shade === "partial") score -= 1;
+    if (shade === "heavy") score -= 2;
+    score = Math.max(0, Math.min(4, score));
+    const action =
+      score <= 1
+        ? "Choose tolerant foliage plants or move closer to the window."
+        : score === 2
+          ? "Use adaptable foliage plants and rotate every watering."
+          : score === 3
+            ? "Most bright-indirect houseplants should have a workable starting point."
+            : "Reserve this spot for sun-tolerant plants or add a sheer curtain.";
+    result.textContent = `${labels[score]} light. ${action}`;
+  }
+
+  form?.addEventListener("input", estimate);
+  estimate();
+</script>

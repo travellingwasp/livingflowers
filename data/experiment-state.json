@@ -1,0 +1,48 @@
+{
+  "experiment": {
+    "name": "WindowPlant Lab 30-day traffic experiment",
+    "timezone": "Europe/Bucharest",
+    "startDate": "2026-07-08",
+    "lengthDays": 30,
+    "currentDay": 1,
+    "domain": "UNSET",
+    "siteUrlEnvVar": "SITE_URL",
+    "status": "bootstrap"
+  },
+  "niche": {
+    "selected": "Renter-friendly houseplant light placement",
+    "positioning": "Practical tools and checklists for matching apartment window light to houseplant placement.",
+    "why": [
+      "Long-tail search demand around window direction, low light, and apartment plant placement.",
+      "Low legal, financial, medical, and safety risk.",
+      "Original utility can be built with calculators, decision trees, diagrams, and measured datasets.",
+      "Traffic can plausibly arrive from specific queries within 30 days."
+    ]
+  },
+  "metrics": {
+    "googleSearchConsole": {
+      "configured": false,
+      "impressions": null,
+      "clicks": null,
+      "queries": []
+    },
+    "cloudflareWebAnalytics": {
+      "configured": false,
+      "verifiedHumanVisits": null,
+      "topPages": [],
+      "referrers": []
+    }
+  },
+  "lastAction": {
+    "date": "2026-07-08",
+    "option": "A",
+    "summary": "Fix indexing and measurement setup blockers before optimizing content.",
+    "validationMetric": "Production sitemap submitted and analytics verified."
+  },
+  "ownerGated": [
+    "Set real domain and SITE_URL.",
+    "Deploy to Cloudflare Pages.",
+    "Add Cloudflare Web Analytics token.",
+    "Verify Google Search Console property and submit sitemap."
+  ]
+}
