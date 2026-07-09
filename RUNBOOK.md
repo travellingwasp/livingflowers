@@ -29,6 +29,8 @@ Do not deploy with the default `https://example.com` value.
 5. Attach the custom domain.
 6. Confirm `/sitemap.xml`, `/robots.txt`, and `/rss.xml` load on production.
 
+Current status for `windowplantlab.com`: configured and live as of 2026-07-08.
+
 ## Google Search Console Setup
 
 1. Add a Domain property if DNS access is available, otherwise add a URL-prefix property for the exact production URL.
@@ -36,6 +38,8 @@ Do not deploy with the default `https://example.com` value.
 3. Submit `https://YOUR_DOMAIN/sitemap.xml`.
 4. Record the setup date in `journal/YYYY-MM-DD.md`.
 5. Check Coverage, Pages, Queries, and Performance daily once data appears.
+
+Current status for `https://windowplantlab.com/`: URL-prefix property verified and `sitemap.xml` submitted as of 2026-07-08.
 
 ## Daily Operation
 
@@ -56,6 +60,8 @@ GitHub Actions daily operation:
 - Required repository variable: `SITE_URL`
 
 The workflow calls the OpenAI Responses API, applies structured file edits, runs checks, and opens a pull request when files changed.
+
+Current status: daily workflow, OpenAI API secret, PR creation, branch protection, and auto-merge are configured. Cloudflare and Search Console API metric ingestion remain technical debt.
 
 Daily decision options:
 

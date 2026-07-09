@@ -4,10 +4,42 @@
     "timezone": "Europe/Bucharest",
     "startDate": "2026-07-08",
     "lengthDays": 30,
-    "currentDay": 1,
+    "currentDay": 2,
     "domain": "windowplantlab.com",
     "siteUrlEnvVar": "SITE_URL",
-    "status": "indexing"
+    "status": "live-measurement-pending"
+  },
+  "setup": {
+    "githubRepository": "https://github.com/travellingwasp/livingflowers",
+    "productionUrl": "https://windowplantlab.com",
+    "cloudflarePages": {
+      "configured": true,
+      "project": "livingflowers",
+      "pagesUrl": "https://livingflowers.pages.dev/",
+      "customDomainActive": true,
+      "lastConfirmed": "2026-07-08"
+    },
+    "cloudflareWebAnalytics": {
+      "snippetConfigured": true,
+      "ownerTestVisitObserved": true,
+      "metricsApiConfigured": false,
+      "lastConfirmed": "2026-07-08"
+    },
+    "googleSearchConsole": {
+      "propertyVerified": true,
+      "verificationMethod": "HTML file",
+      "sitemapSubmitted": true,
+      "metricsApiConfigured": false,
+      "lastConfirmed": "2026-07-08"
+    },
+    "githubActions": {
+      "dailyWorkflowConfigured": true,
+      "openaiApiSecretConfigured": true,
+      "pullRequestCreationWorks": true,
+      "autoMergeConfigured": true,
+      "branchProtectionConfigured": true,
+      "lastConfirmed": "2026-07-08"
+    }
   },
   "niche": {
     "selected": "Renter-friendly houseplant light placement",
@@ -21,28 +53,36 @@
   },
   "metrics": {
     "googleSearchConsole": {
-      "configured": false,
+      "configured": true,
       "impressions": null,
       "clicks": null,
+      "indexedPages": null,
+      "sitemapSubmitted": true,
+      "lastManualCheck": "2026-07-08",
       "queries": []
     },
     "cloudflareWebAnalytics": {
-      "configured": false,
+      "configured": true,
       "verifiedHumanVisits": null,
+      "ownerTestVisitObserved": true,
+      "lastManualCheck": "2026-07-08",
       "topPages": [],
       "referrers": []
     }
   },
   "lastAction": {
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "option": "A",
-    "summary": "Created repository sitemap.xml, robots.txt, and rss.xml pointing to https://windowplantlab.com; updated state to 'indexing'. Owner action required: set SITE_URL in deployment, add Cloudflare Web Analytics token, and verify Search Console property.",
-    "validationMetric": "Sitemap and robots.txt present in repository at /public; site URL set in experiment-state. Verification of Search Console and Cloudflare Web Analytics remains pending and must be completed by the owner."
+    "summary": "Corrected experiment state after owner completed deployment, analytics snippet setup, Search Console verification, sitemap submission, GitHub Actions PR creation, branch protection, and auto-merge setup.",
+    "validationMetric": "Repository state now reflects that production setup is live; external traffic metrics remain unavailable until Cloudflare and Search Console API access or manual metric imports are added."
   },
   "ownerGated": [
-    "Set real domain and SITE_URL.",
-    "Deploy to Cloudflare Pages.",
-    "Add Cloudflare Web Analytics token.",
-    "Verify Google Search Console property and submit sitemap."
+    "Add Cloudflare API metrics access or manually import Cloudflare Web Analytics metrics.",
+    "Add Google Search Console API access or manually import Search Console metrics."
+  ],
+  "technicalDebt": [
+    "Cloudflare Web Analytics metrics are not yet fetched automatically.",
+    "Google Search Console metrics are not yet fetched automatically.",
+    "Daily agent can make better decisions only after verified metrics are available in repository state."
   ]
 }

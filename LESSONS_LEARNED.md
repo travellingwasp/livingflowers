@@ -8,7 +8,11 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 ## Search lessons
 
-- None yet.
+- First observed date: 2026-07-09
+  - Evidence: Search Console was verified and sitemap submission was completed manually, but repository state still marked Search Console as unconfigured.
+  - Confidence: high
+  - Operational rule: After any owner-completed external setup, immediately update `data/experiment-state.json` so the daily agent does not optimize against stale blockers.
+  - Status: active
 
 ## Content lessons
 
@@ -28,14 +32,18 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 ## Analytics lessons
 
-- None yet.
+- First observed date: 2026-07-09
+  - Evidence: Cloudflare Web Analytics snippet was configured and an owner test visit appeared, but automatic metric ingestion is not yet available.
+  - Confidence: high
+  - Operational rule: Treat owner test visits as analytics validation only, not traffic success; real traffic metrics require Cloudflare API access or manual imports.
+  - Status: active
 
 ## Workflow lessons
 
 - First observed date: 2026-07-08
   - Evidence: The experiment began without a confirmed production domain or analytics credentials.
   - Confidence: high
-  - Operational rule: Keep domain, Cloudflare, and Search Console setup as explicit owner-gated tasks; do not report traffic success before independent metrics exist.
+  - Operational rule: Keep domain, Cloudflare, and Search Console setup as explicit owner-gated tasks until they are completed; once completed, update experiment state the same day.
   - Status: active
 
 
