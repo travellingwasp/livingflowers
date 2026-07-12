@@ -4,7 +4,7 @@
     "timezone": "Europe/Bucharest",
     "startDate": "2026-07-08",
     "lengthDays": 30,
-    "currentDay": 2,
+    "currentDay": 5,
     "domain": "windowplantlab.com",
     "siteUrlEnvVar": "SITE_URL",
     "status": "live-measurement-pending"
@@ -40,6 +40,15 @@
       "branchProtectionConfigured": true,
       "lastConfirmed": "2026-07-08"
     }
+  },
+  "journalCoverage": {
+    "lastReconciled": "2026-07-12",
+    "missingDates": [
+      "2026-07-09",
+      "2026-07-10",
+      "2026-07-11"
+    ],
+    "note": "Journal gap recorded during repository reconciliation; no activity or metrics were inferred for the missing dates."
   },
   "niche": {
     "selected": "Renter-friendly houseplant light placement",

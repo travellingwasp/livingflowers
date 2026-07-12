@@ -40,6 +40,12 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 ## Workflow lessons
 
+- First observed date: 2026-07-12
+  - Evidence: After transferring work between computers, the repository state showed Day 2 while the calendar date corresponded to Day 5, and journals for 2026-07-09 through 2026-07-11 were absent.
+  - Confidence: high
+  - Operational rule: Every transfer between computers must begin by synchronizing the repository and verifying the latest journal before changing experiment state or choosing a daily action.
+  - Status: active
+
 - First observed date: 2026-07-08
   - Evidence: The experiment began without a confirmed production domain or analytics credentials.
   - Confidence: high
