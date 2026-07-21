@@ -1,0 +1,55 @@
+{
+  "note": "This is a sample/manual import schema to allow the owner to drop exported metrics into the repository when API access cannot be provided. Fill the fields with real exports or follow the format exactly when uploading a JSON or converting CSV to this structure.",
+  "generatedAt": "2026-07-21T00:00:00+03:00",
+  "siteUrl": "https://windowplantlab.com/",
+  "googleSearchConsole": {
+    "example": true,
+    "notes": "Replace example numbers with exported Search Console totals for the report period. If you provide a CSV/JSON from GSC, convert to this shape.",
+    "periodStart": "2026-07-14",
+    "periodEnd": "2026-07-21",
+    "indexedPages": 5,
+    "impressions": 123,
+    "clicks": 4,
+    "queries": [
+      {
+        "query": "north facing window plants apartment",
+        "impressions": 40,
+        "clicks": 2,
+        "page": "https://windowplantlab.com/north-facing-window-plants/"
+      },
+      {
+        "query": "plant distance from window calculator",
+        "impressions": 20,
+        "clicks": 0,
+        "page": "https://windowplantlab.com/plant-distance-calculator/"
+      }
+    ]
+  },
+  "cloudflareWebAnalytics": {
+    "example": true,
+    "notes": "Replace example numbers with Cloudflare Web Analytics export for the report period. The collector excludes known bots; ensure you use the verified human visits export if available.",
+    "periodStart": "2026-07-14",
+    "periodEnd": "2026-07-21",
+    "verifiedHumanVisits": 18,
+    "topPages": [
+      {
+        "path": "/",
+        "visits": 8
+      },
+      {
+        "path": "/north-facing-window-plants/",
+        "visits": 5
+      }
+    ],
+    "referrers": [
+      {
+        "source": "direct",
+        "visits": 10
+      },
+      {
+        "source": "reddit.com",
+        "visits": 3
+      }
+    ]
+  }
+}
