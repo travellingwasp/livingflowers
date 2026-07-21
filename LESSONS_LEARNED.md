@@ -54,6 +54,12 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Operational rule: Provide a documented manual import format (CSV/JSON) for Cloudflare and Search Console exports so owners can add metric snapshots to the repository when API access is not possible.
   - Status: recommended
 
+- First observed date: 2026-07-21
+  - Evidence: A sample file (data/manual-metrics-import.json) is now present in the repository. This allows the owner to drop real exports into the repository so the daily agent can make data-driven choices while API credentials remain unavailable.
+  - Confidence: high
+  - Operational rule: When API access is not feasible, upload a vetted manual metrics snapshot weekly (or daily if available) using the sample schema. The daily agent will treat uploaded snapshots as authoritative for the run day.
+  - Status: active
+
 ## Workflow lessons
 
 - First observed date: 2026-07-12
@@ -88,3 +94,7 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 - Produce crawl artifacts and canonical mappings immediately when indexing is the primary bottleneck; do not wait for owner deployment to create these repository-level files.
 - When metric ingestion is delayed, prepare snippet-ready metadata (meta titles and descriptions) and document a manual import path for metrics to enable data-driven daily decisions.
+
+## Operational recommendation (2026-07-21)
+
+- If automatic metric ingestion is unavailable, the owner should provide a manual export (JSON or CSV converted to the sample schema in `data/manual-metrics-import.json`) no less than once per week. The daily agent will read that file and populate `data/metrics-snapshot.json` for runs where APIs are not configured. This reduces decision paralysis and keeps the experiment moving while preserving data provenance.

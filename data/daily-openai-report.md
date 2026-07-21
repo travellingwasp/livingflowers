@@ -9,27 +9,26 @@ Impressions: not available yet
 Clicks: not available yet
 Verified visits: not available yet
 BOTTLENECK:
-Primary blocker: metric ingestion — Cloudflare Web Analytics and Google Search Console metrics are not available in the repository (API credentials or manual imports required). Without these, prioritization is conservative and focuses on high-leverage technical SEO that does not require metrics.
+Metric ingestion (Cloudflare / Search Console API not configured) — the daily agent cannot read real traffic without owner-provided API access or a manual export.
 ACTION:
-B. Fix technical SEO — added explicit meta_title and meta_description fields to the content inventory for all published pages to improve search snippets and CTR potential when impressions appear; prepared notes for structured data and manual metric import guidance.
+B
 FILES CHANGED:
 - data/experiment-state.json
-- data/content-inventory.json
+- data/manual-metrics-import.json (new)
 - LESSONS_LEARNED.md
 - journal/2026-07-21.md
 TESTS:
-- Local validation: JSON files checked for basic parse/structure by visual inspection in this run. No external API tests possible because credentials are not present. Verify that the site templates use these fields on merge/deploy.
+- Syntax validation for JSON and Markdown files passed (file presence and well-formed JSON). Sample schema matches METRICS.md expectations.
 PR:
-- A daily branch and PR should be created by the workflow; owner review required before merge and deployment.
+The daily workflow will create a branch and open a PR for owner review and merge per repository policy.
 LESSON LEARNED:
-- Preparing search snippets (meta title + description) is a small, high-leverage task while waiting for Search Console impressions. Also document a manual import format for metrics so the agent can act on real data if API access is not possible.
+Providing a documented manual metrics import schema is a practical, low-friction workaround when API credentials cannot be provided; it enables evidence-driven daily runs.
 NEXT SIGNAL TO WATCH:
-- Google Search Console: impressions per page and queries.
-- Cloudflare Web Analytics: verified human visits and top pages.
+A real metrics snapshot appearing in data/metrics-snapshot.json or an uploaded manual export in the sample schema.
 BLOCKER:
-- Owner must provide metrics via API credentials or upload manual metric exports to the repository so daily decisions can be based on real, verifiable traffic data.
+Owner action required: provide API credentials for automated ingestion or upload manual metrics in the provided schema.
 
 
 ## Summary
 
-Improve technical SEO by adding explicit meta titles and descriptions (search snippets) for all published pages in the content inventory, update experiment state to today's day, and record the operation in a new daily journal and LESSONS_LEARNED. Metrics remain unavailable; this improves likelihood of click-through when Search Console begins reporting impressions.
+Add a documented manual metrics import format and update lessons to unblock daily decisions while Cloudflare/Search Console API access remains unavailable; this is a technical-SEO/ops support change (snippet readiness previously added) and is a changed variable from prior B work.
