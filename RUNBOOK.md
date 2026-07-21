@@ -63,6 +63,20 @@ The workflow calls the OpenAI Responses API, applies structured file edits, runs
 
 Current status: daily workflow, OpenAI API secret, PR creation, branch protection, and auto-merge are configured. Cloudflare and Search Console API metric ingestion remain technical debt.
 
+## Automated Metric Ingestion
+
+The daily workflow runs `npm run metrics` before the autonomous decision. It writes a sanitized snapshot to `data/metrics-snapshot.json` and updates the metric fields in `data/experiment-state.json`.
+
+Configure these GitHub Actions values:
+
+- Secret `GOOGLE_SERVICE_ACCOUNT_JSON`: complete Google service-account JSON. Enable the Search Console API and add `client_email` as a user with read access to the exact Search Console property.
+- Variable `SEARCH_CONSOLE_SITE_URL`: exact property identifier, including trailing slash for a URL-prefix property, for example `https://windowplantlab.com/`.
+- Secret `CLOUDFLARE_API_TOKEN`: token with Account Analytics read permission.
+- Variable `CLOUDFLARE_ACCOUNT_ID`: Cloudflare account ID.
+- Variable `CLOUDFLARE_WEB_ANALYTICS_SITE_TAG`: Web Analytics site tag shown in the beacon configuration.
+
+The collector excludes Cloudflare rows classified as bots. Missing credentials produce an explicit `not_configured` state; invalid credentials fail the workflow rather than allowing the agent to act on stale data.
+
 Daily decision options:
 
 - A. Fix indexing or discovery.

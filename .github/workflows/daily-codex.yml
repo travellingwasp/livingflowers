@@ -19,6 +19,15 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Collect verified traffic metrics
+        run: npm run metrics
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          SEARCH_CONSOLE_SITE_URL: ${{ vars.SEARCH_CONSOLE_SITE_URL || vars.SITE_URL }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_WEB_ANALYTICS_SITE_TAG: ${{ vars.CLOUDFLARE_WEB_ANALYTICS_SITE_TAG }}
       - name: Run OpenAI autonomous daily operation
         run: node scripts/autonomous-openai-run.mjs
         env:
@@ -32,6 +41,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           branch: codex/daily-traffic-experiment
+          delete-branch: true
           commit-message: "Run daily traffic experiment update"
           title: "Daily traffic experiment update"
           body: |

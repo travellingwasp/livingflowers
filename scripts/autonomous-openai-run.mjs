@@ -16,7 +16,8 @@ const requiredReads = [
   "EDITORIAL_POLICY.md",
   "LESSONS_LEARNED.md",
   "data/experiment-state.json",
-  "data/content-inventory.json"
+  "data/content-inventory.json",
+  "data/metrics-snapshot.json"
 ];
 
 const editablePrefixes = [
@@ -176,7 +177,7 @@ async function main() {
 
 You are running inside GitHub Actions. Return only valid JSON. Do not wrap it in markdown.
 
-You cannot directly browse Google Search Console or Cloudflare unless their metrics have been written into repository files. Treat missing metrics as unavailable.
+Google Search Console and Cloudflare metrics are collected before this step into data/metrics-snapshot.json. Use only sources whose status is "ok"; treat not_configured or error sources as unavailable.
 
 Return this JSON shape:
 {
