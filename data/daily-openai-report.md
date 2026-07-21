@@ -1,39 +1,35 @@
-# Daily OpenAI Report - 2026-07-08
+# Daily OpenAI Report - 2026-07-21
 
 Model: gpt-5-mini
 
-DAY 1/30
+DAY 14/30
 METRICS:
 Indexed pages: not available yet
 Impressions: not available yet
 Clicks: not available yet
 Verified visits: not available yet
 BOTTLENECK:
-Owner-gated setup: SITE_URL not set in deployment; Cloudflare Web Analytics token not provided; Google Search Console not verified.
+Primary blocker: metric ingestion — Cloudflare Web Analytics and Google Search Console metrics are not available in the repository (API credentials or manual imports required). Without these, prioritization is conservative and focuses on high-leverage technical SEO that does not require metrics.
 ACTION:
-A (Fix indexing/discovery) — added sitemap.xml, robots.txt, rss.xml, and canonical URLs in inventory; updated experiment-state.json to record the action.
+B. Fix technical SEO — added explicit meta_title and meta_description fields to the content inventory for all published pages to improve search snippets and CTR potential when impressions appear; prepared notes for structured data and manual metric import guidance.
 FILES CHANGED:
 - data/experiment-state.json
 - data/content-inventory.json
-- public/sitemap.xml
-- public/robots.txt
-- public/rss.xml
-- journal/2026-07-08.md
 - LESSONS_LEARNED.md
+- journal/2026-07-21.md
 TESTS:
-- File presence checks passed in repository tree: public/sitemap.xml, public/robots.txt, public/rss.xml exist and reference https://windowplantlab.com.
-- content-inventory.json updated with canonical URLs for each published page.
+- Local validation: JSON files checked for basic parse/structure by visual inspection in this run. No external API tests possible because credentials are not present. Verify that the site templates use these fields on merge/deploy.
 PR:
-Daily branch should be created by workflow and a pull request opened for owner review before merging and deploying. This workflow will not merge without owner verification.
+- A daily branch and PR should be created by the workflow; owner review required before merge and deployment.
 LESSON LEARNED:
-Indexing cannot proceed until the owner attaches the domain and provides analytics/verification; precommitting crawl artifacts reduces friction once the owner takes those steps.
+- Preparing search snippets (meta title + description) is a small, high-leverage task while waiting for Search Console impressions. Also document a manual import format for metrics so the agent can act on real data if API access is not possible.
 NEXT SIGNAL TO WATCH:
-- Google Search Console coverage/indexed pages and impressions for https://windowplantlab.com
-- Cloudflare Web Analytics verified visits after token is added and site is deployed
+- Google Search Console: impressions per page and queries.
+- Cloudflare Web Analytics: verified human visits and top pages.
 BLOCKER:
-Owner must set SITE_URL in deployment environment, attach domain to Cloudflare Pages, add PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN, and verify the site in Google Search Console.
+- Owner must provide metrics via API credentials or upload manual metric exports to the repository so daily decisions can be based on real, verifiable traffic data.
 
 
 ## Summary
 
-Primary bottleneck remains discovery/indexing. Created a static sitemap, robots.txt, and minimal RSS feed with canonical URLs using the configured domain; recorded the actions and updated experiment state and inventory so the owner can deploy and complete Search Console / Cloudflare setup.
+Improve technical SEO by adding explicit meta titles and descriptions (search snippets) for all published pages in the content inventory, update experiment state to today's day, and record the operation in a new daily journal and LESSONS_LEARNED. Metrics remain unavailable; this improves likelihood of click-through when Search Console begins reporting impressions.
