@@ -77,7 +77,7 @@ async function collectSearchConsole() {
   const endDate = isoDate(daysAgo(3));
   const startDate = isoDate(daysAgo(30));
   const endpoint = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(normalizedSiteUrl)}/searchAnalytics/query`;
-  const [totals, details] = await Promise.all([
+  const [totals, details, dailyTotals, dailyPages] = await Promise.all([
     googleJson(endpoint, token, { startDate, endDate, type: "web", dataState: "final" }),
     googleJson(endpoint, token, {
       startDate,
@@ -86,6 +86,12 @@ async function collectSearchConsole() {
       type: "web",
       dataState: "final",
       rowLimit: 250
+    }),
+    googleJson(endpoint, token, {
+      startDate, endDate, dimensions: ["date"], type: "web", dataState: "final", rowLimit: 1000
+    }),
+    googleJson(endpoint, token, {
+      startDate, endDate, dimensions: ["date", "page"], type: "web", dataState: "final", rowLimit: 5000
     })
   ]);
 
@@ -105,19 +111,61 @@ async function collectSearchConsole() {
   }));
 
   const total = totals.rows?.[0] || {};
+  const dailySeries = (dailyTotals.rows || []).map((row) => ({
+    date: row.keys?.[0], clicks: row.clicks || 0, impressions: row.impressions || 0,
+    ctr: row.ctr || 0, position: row.position ?? null
+  })).sort((a, b) => a.date.localeCompare(b.date));
+  const actualDataEndDate = dailySeries.at(-1)?.date || null;
+  const pageDailySeries = (dailyPages.rows || []).map((row) => ({
+    date: row.keys?.[0], page: row.keys?.[1], clicks: row.clicks || 0,
+    impressions: row.impressions || 0, ctr: row.ctr || 0, position: row.position ?? null
+  })).sort((a, b) => a.date.localeCompare(b.date) || a.page.localeCompare(b.page));
   return {
     status: "ok",
     range: { startDate, endDate },
+    actualDataEndDate,
+    dataLagDays: actualDataEndDate
+      ? Math.floor((Date.now() - Date.parse(`${actualDataEndDate}T00:00:00Z`)) / 86_400_000)
+      : null,
     clicks: total.clicks || 0,
     impressions: total.impressions || 0,
     ctr: total.ctr || 0,
     position: total.position ?? null,
     indexedPages: inspections.filter((row) => row.verdict === "PASS").length,
     inspections,
+    dailySeries,
+    pageDailySeries,
+    clickExpectation: {
+      atOnePercentCtr: Number(((total.impressions || 0) * 0.01).toFixed(2)),
+      atFivePercentCtr: Number(((total.impressions || 0) * 0.05).toFixed(2)),
+      note: "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
+    },
     topPageQueries: (details.rows || []).map((row) => ({
       page: row.keys?.[0], query: row.keys?.[1], clicks: row.clicks, impressions: row.impressions, ctr: row.ctr, position: row.position
     }))
   };
+}
+
+async function collectLiveSiteChecks() {
+  const inventory = JSON.parse(await readFile(inventoryPath, "utf8"));
+  const pages = await Promise.all(inventory.pages.map(async (page) => {
+    const url = new URL(page.path, normalizedSiteUrl).href;
+    try {
+      const response = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(15_000) });
+      const html = await response.text();
+      const canonical = html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)/i)?.[1] || null;
+      return {
+        url, status: response.status, ok: response.ok, finalUrl: response.url,
+        hasTitle: /<title>[^<]+<\/title>/i.test(html),
+        hasDescription: /<meta[^>]+name=["']description["']/i.test(html),
+        hasStructuredData: /<script[^>]+type=["']application\/ld\+json["']/i.test(html),
+        canonical
+      };
+    } catch (error) {
+      return { url, ok: false, error: error.message };
+    }
+  }));
+  return { status: "ok", checkedAt: new Date().toISOString(), pages };
 }
 
 async function cloudflareGraphql(query, variables) {
@@ -175,7 +223,8 @@ const snapshot = {
   generatedAt: new Date().toISOString(),
   siteUrl: normalizedSiteUrl,
   googleSearchConsole: await safeCollect("Google Search Console", collectSearchConsole),
-  cloudflareWebAnalytics: await safeCollect("Cloudflare Web Analytics", collectCloudflare)
+  cloudflareWebAnalytics: await safeCollect("Cloudflare Web Analytics", collectCloudflare),
+  liveSiteChecks: await safeCollect("Live site checks", collectLiveSiteChecks)
 };
 await writeFile(outputPath, `${JSON.stringify(snapshot, null, 2)}\n`);
 

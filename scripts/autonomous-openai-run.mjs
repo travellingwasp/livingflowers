@@ -21,7 +21,7 @@ const requiredReads = [
   "data/metrics-snapshot.json"
 ];
 
-const editablePrefixes = ["src/", "content/", "public/", "data/", "journal/"];
+const editablePrefixes = ["src/", "content/", "public/", "data/"];
 
 const editableRootFiles = new Set([
   "LESSONS_LEARNED.md",
@@ -32,6 +32,8 @@ const editableRootFiles = new Set([
 
 const protectedPaths = new Set([
   "package-lock.json",
+  "data/metrics-snapshot.json",
+  "data/daily-openai-report.md",
   "node_modules",
   "dist",
   ".git",
@@ -112,7 +114,45 @@ function validatePlan(plan) {
   if (!plan || typeof plan !== "object") throw new Error("Response JSON must be an object.");
   if (!Array.isArray(plan.edits)) throw new Error("Response JSON must include an edits array.");
   if (typeof plan.terminal_report !== "string") throw new Error("Response JSON must include terminal_report.");
-  if (plan.edits.length === 0) throw new Error("The daily plan must contain at least one edit.");
+  const modes = new Set(["implement", "wait", "draft_distribution", "propose_protected"]);
+  const decisions = new Set(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]);
+  if (!decisions.has(plan.decision)) throw new Error("Response JSON has an invalid decision.");
+  if (!modes.has(plan.action_mode)) throw new Error("Response JSON has an invalid action_mode.");
+  if (plan.decision === "K" && plan.action_mode !== "wait") {
+    throw new Error("Decision K must use wait mode.");
+  }
+  if (plan.decision === "H" && plan.action_mode !== "draft_distribution") {
+    throw new Error("Decision H must use draft_distribution mode.");
+  }
+  if (plan.action_mode === "draft_distribution" && !plan.distribution_draft?.trim()) {
+    throw new Error("Distribution mode requires a distribution draft.");
+  }
+  if (plan.action_mode === "propose_protected" && !plan.protected_proposal?.trim()) {
+    throw new Error("Protected mode requires a human-review proposal.");
+  }
+  if (plan.action_mode === "implement" && plan.edits.length === 0) {
+    throw new Error("An implement plan must contain at least one edit.");
+  }
+  if (plan.action_mode !== "implement" && plan.edits.length > 0) {
+    throw new Error(`${plan.action_mode} must not edit site files.`);
+  }
+  if (!plan.evidence || !Array.isArray(plan.evidence.facts) || !Array.isArray(plan.evidence.measurements) ||
+      !Array.isArray(plan.evidence.interpretations) || !Array.isArray(plan.evidence.hypotheses)) {
+    throw new Error("Evidence must separate facts, measurements, interpretations, and hypotheses.");
+  }
+  const evidenceItems = Object.values(plan.evidence).flat();
+  if (!evidenceItems.every((item) => typeof item === "string")) {
+    throw new Error("Every evidence entry must be a string.");
+  }
+  if (!plan.learning || !Array.isArray(plan.learning.worked) || !Array.isArray(plan.learning.failed) ||
+      !Array.isArray(plan.learning.assumption_updates) || typeof plan.learning.lesson !== "string" ||
+      typeof plan.learning.tomorrow !== "string") {
+    throw new Error("Response JSON must include the structured learning loop.");
+  }
+  const evidenceStatuses = new Set(["WAITING_FOR_EVIDENCE", "READY_TO_EVALUATE", "NOT_APPLICABLE"]);
+  if (!evidenceStatuses.has(plan.waiting_for_evidence?.status)) {
+    throw new Error("waiting_for_evidence has an invalid status.");
+  }
   if (plan.edits.length > 12) throw new Error("The daily plan exceeds the 12-file safety limit.");
   const seenPaths = new Set();
   let totalBytes = 0;
@@ -126,6 +166,78 @@ function validatePlan(plan) {
     totalBytes += Buffer.byteLength(edit.content, "utf8");
   }
   if (totalBytes > 500_000) throw new Error("The daily plan exceeds the 500 KB safety limit.");
+}
+
+function bullets(values) {
+  return values.length ? values.map((value) => `- ${value}`).join("\n") : "- None recorded.";
+}
+
+async function writeDailyJournal(today, plan) {
+  const waiting = plan.waiting_for_evidence || {};
+  const content = `# Daily operation - ${today}
+
+## Decision
+
+- Category: ${plan.decision}
+- Mode: ${plan.action_mode}
+- Summary: ${plan.summary || "No summary provided."}
+
+## Facts
+
+${bullets(plan.evidence.facts)}
+
+## Measurements
+
+${bullets(plan.evidence.measurements)}
+
+## Interpretations
+
+${bullets(plan.evidence.interpretations)}
+
+## Hypotheses
+
+${bullets(plan.evidence.hypotheses)}
+
+## Learning loop
+
+### What worked
+
+${bullets(plan.learning.worked)}
+
+### What failed
+
+${bullets(plan.learning.failed)}
+
+### Assumption updates
+
+${bullets(plan.learning.assumption_updates)}
+
+- Reusable lesson: ${plan.learning.lesson}
+- Tomorrow: ${plan.learning.tomorrow}
+
+## Evidence status
+
+- Status: ${waiting.status || "NOT_APPLICABLE"}
+- Signal: ${waiting.signal || "None"}
+- Evaluate after: ${waiting.available_after || "Not specified"}
+
+## Protected proposal
+
+${plan.protected_proposal || "None."}
+
+## Distribution draft
+
+${plan.distribution_draft || "None."}
+
+## Terminal report
+
+\`\`\`text
+${plan.terminal_report}
+\`\`\`
+`;
+  const journalPath = path.join(root, "journal", `${today}.md`);
+  await mkdir(path.dirname(journalPath), { recursive: true });
+  await writeFile(journalPath, content);
 }
 
 async function callOpenAI(input) {
@@ -242,8 +354,29 @@ Google Search Console and Cloudflare metrics are collected before this step into
 
 Return this JSON shape:
 {
-  "decision": "A|B|C|D|E|F|G|H|I|J",
+  "decision": "A|B|C|D|E|F|G|H|I|J|K",
+  "action_mode": "implement|wait|draft_distribution|propose_protected",
   "summary": "short explanation",
+  "evidence": {
+    "facts": ["directly observable facts only"],
+    "measurements": ["sourced numbers with range and true data end date"],
+    "interpretations": ["what the measurements likely mean"],
+    "hypotheses": ["claims still requiring evidence"]
+  },
+  "learning": {
+    "worked": ["outcomes supported by evidence"],
+    "failed": ["failed or inconclusive attempts"],
+    "assumption_updates": ["CONFIRMED|WEAKENED|DISPROVEN|UNTESTED: claim and evidence"],
+    "lesson": "date | evidence | confidence | rule | status",
+    "tomorrow": "recommended next action"
+  },
+  "waiting_for_evidence": {
+    "status": "WAITING_FOR_EVIDENCE|READY_TO_EVALUATE|NOT_APPLICABLE",
+    "signal": "exact metric that resolves the question",
+    "available_after": "YYYY-MM-DD or condition"
+  },
+  "protected_proposal": "human-review proposal, or empty string",
+  "distribution_draft": "owner-posted draft, or empty string",
   "edits": [
     {
       "path": "relative/path/from/repo/root",
@@ -254,8 +387,10 @@ Return this JSON shape:
 }
 
 Use complete file contents in edits, not patches. Keep edits scoped and safe.
-Allowed edit areas: src/, content/, public/, data/, journal/, scripts/, .github/, root markdown docs.
-Do not edit package-lock.json unless package.json dependency changes are absolutely required.
+Allowed edit areas: src/, content/, public/, data/, and selected root strategy markdown docs. The runner writes today's journal itself.
+Never edit scripts, workflows, dependencies, or configuration. Put those ideas in protected_proposal.
+For distribution, return action_mode=draft_distribution, no edits, and a draft for the owner; never claim it was posted.
+K means measure and wait. No site edit is required or allowed for K.
 
 Today's date in Europe/Bucharest is ${today}.
 
@@ -269,11 +404,12 @@ ${journalText}
   const snapshot = await snapshotEdits(plan.edits);
   try {
     await applyEdits(plan.edits);
-    await runChecks();
+    if (plan.edits.length) await runChecks();
   } catch (error) {
     await rollbackEdits(snapshot);
     throw error;
   }
+  await writeDailyJournal(today, plan);
   await writeFile(
     reportPath,
     `# Daily OpenAI Report - ${today}
