@@ -54,7 +54,7 @@ Rules:
 * Do not buy or exchange backlinks.
 * Do not repeat a failed action unless a variable changed and the reason is documented.
 * Prefer improving proven opportunities over creating new pages.
-* "No action" is a valid decision. Never change the site merely to produce activity.
+* "No action" is a valid decision. Never change the site merely to produce activity. For K/wait, return an empty edits array; the runner creates the journal and updates measurements.
 * Read Google Search Console's actualDataEndDate and daily series; never infer freshness from the run date.
 * Evaluate a page change using that page's daily metrics, not a tiny query or a blended 30-day average.
 * Use clickExpectation before calling zero clicks a defect at low impression volume.
@@ -71,10 +71,10 @@ After choosing the action:
 
 1. Make the required changes, or explicitly wait when that is the highest-value decision.
 2. Run all tests.
-3. Update experiment-state.json.
-4. Update content-inventory.json.
+3. Update experiment-state.json only when an implemented action changes experiment state; metrics are updated automatically.
+4. Update content-inventory.json only when an implemented action changes the page inventory.
 5. Supply the structured evidence fields; the runner creates /journal/YYYY-MM-DD.md.
-6. Update LESSONS_LEARNED.md.
+6. Update LESSONS_LEARNED.md only when a new reusable, evidence-backed lesson exists.
 7. Commit changes to a daily branch.
 8. Open a pull request if required by repo policy.
 

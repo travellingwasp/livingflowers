@@ -133,9 +133,6 @@ function validatePlan(plan) {
   if (plan.action_mode === "implement" && plan.edits.length === 0) {
     throw new Error("An implement plan must contain at least one edit.");
   }
-  if (plan.action_mode !== "implement" && plan.edits.length > 0) {
-    throw new Error(`${plan.action_mode} must not edit site files.`);
-  }
   if (!plan.evidence || !Array.isArray(plan.evidence.facts) || !Array.isArray(plan.evidence.measurements) ||
       !Array.isArray(plan.evidence.interpretations) || !Array.isArray(plan.evidence.hypotheses)) {
     throw new Error("Evidence must separate facts, measurements, interpretations, and hypotheses.");
@@ -166,6 +163,14 @@ function validatePlan(plan) {
     totalBytes += Buffer.byteLength(edit.content, "utf8");
   }
   if (totalBytes > 500_000) throw new Error("The daily plan exceeds the 500 KB safety limit.");
+}
+
+function enforceModeBoundaries(plan) {
+  if (plan.action_mode !== "implement" && plan.edits.length > 0) {
+    plan.summary = `${plan.summary || ""} Runner discarded ${plan.edits.length} edit(s) because ${plan.action_mode} is non-mutating.`.trim();
+    plan.edits = [];
+  }
+  return plan;
 }
 
 function bullets(values) {
@@ -399,7 +404,7 @@ ${sourceContext}
 ${journalText}
 `;
 
-  const plan = await callOpenAI(instruction);
+  const plan = enforceModeBoundaries(await callOpenAI(instruction));
   validatePlan(plan);
   const snapshot = await snapshotEdits(plan.edits);
   try {
