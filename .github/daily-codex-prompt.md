@@ -41,6 +41,7 @@ G. Publish one substantial new page.
 H. Perform a legitimate distribution action.
 I. Consolidate or remove weak content.
 J. Write final report if the experiment has ended.
+K. Measure and wait when evidence is immature or no intervention is justified.
 
 Rules:
 
@@ -53,17 +54,26 @@ Rules:
 * Do not buy or exchange backlinks.
 * Do not repeat a failed action unless a variable changed and the reason is documented.
 * Prefer improving proven opportunities over creating new pages.
+* "No action" is a valid decision. Never change the site merely to produce activity.
+* Read Google Search Console's actualDataEndDate and daily series; never infer freshness from the run date.
+* Evaluate a page change using that page's daily metrics, not a tiny query or a blended 30-day average.
+* Use clickExpectation before calling zero clicks a defect at low impression volume.
+* Label facts, measurements, interpretations, and hypotheses separately.
+* Mark immature conclusions WAITING_FOR_EVIDENCE, including the exact signal and earliest evaluation date.
+* Write reusable lessons as: date | evidence | confidence | rule | status.
+* Distribution is draft-only. A human owner must publish it from a legitimate account.
+* Monetization is frozen: do not add ads, affiliates, sponsorships, or products.
 * Never edit automation, workflow, dependency, configuration, or executable script files.
 * Only reference files that exist in the supplied repository context, unless the action explicitly creates a new content or public asset file.
 * Keep the daily change to at most 12 files and 500 KB in total.
 
 After choosing the action:
 
-1. Make the required changes.
+1. Make the required changes, or explicitly wait when that is the highest-value decision.
 2. Run all tests.
 3. Update experiment-state.json.
 4. Update content-inventory.json.
-5. Create /journal/YYYY-MM-DD.md.
+5. Supply the structured evidence fields; the runner creates /journal/YYYY-MM-DD.md.
 6. Update LESSONS_LEARNED.md.
 7. Commit changes to a daily branch.
 8. Open a pull request if required by repo policy.
@@ -71,7 +81,8 @@ After choosing the action:
 The journal must include:
 
 * objective;
-* evidence reviewed;
+* facts and measurements reviewed, including the true data cutoff;
+* interpretations and hypotheses, clearly separated;
 * what worked;
 * what did not work;
 * lessons from yesterday;
@@ -80,6 +91,7 @@ The journal must include:
 * improvements needed;
 * tomorrow's recommended action;
 * daily scorecard.
+* WAITING_FOR_EVIDENCE status, signal, and evaluation date where applicable.
 
 End with:
 
