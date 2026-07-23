@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T17:13:55.860Z",
+  "generatedAt": "2026-07-23T22:21:45.154Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
@@ -7,6 +7,8 @@
       "startDate": "2026-06-23",
       "endDate": "2026-07-20"
     },
+    "actualDataEndDate": "2026-07-20",
+    "dataLagDays": 3,
     "clicks": 0,
     "impressions": 42,
     "ctr": 0,
@@ -36,9 +38,260 @@
       {
         "url": "https://windowplantlab.com/low-light-plant-placement-checklist/",
         "verdict": "NEUTRAL",
-        "coverageState": "Discovered - currently not indexed"
+        "coverageState": "URL is unknown to Google"
       }
     ],
+    "dailySeries": [
+      {
+        "date": "2026-07-07",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "date": "2026-07-08",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "date": "2026-07-09",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "date": "2026-07-10",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 61.666666666666664
+      },
+      {
+        "date": "2026-07-11",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 60.25
+      },
+      {
+        "date": "2026-07-12",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 46.4
+      },
+      {
+        "date": "2026-07-13",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 43.5
+      },
+      {
+        "date": "2026-07-14",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 43
+      },
+      {
+        "date": "2026-07-15",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "date": "2026-07-16",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 57
+      },
+      {
+        "date": "2026-07-17",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 60.5
+      },
+      {
+        "date": "2026-07-18",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 60
+      },
+      {
+        "date": "2026-07-19",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 38.25
+      },
+      {
+        "date": "2026-07-20",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 61.57142857142857
+      }
+    ],
+    "pageDailySeries": [
+      {
+        "date": "2026-07-10",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 61.666666666666664
+      },
+      {
+        "date": "2026-07-11",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 79.66666666666667
+      },
+      {
+        "date": "2026-07-11",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "date": "2026-07-12",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 68.33333333333333
+      },
+      {
+        "date": "2026-07-12",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 13.5
+      },
+      {
+        "date": "2026-07-13",
+        "page": "https://windowplantlab.com/light-meter/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 44
+      },
+      {
+        "date": "2026-07-13",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 43
+      },
+      {
+        "date": "2026-07-14",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 26
+      },
+      {
+        "date": "2026-07-14",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 77
+      },
+      {
+        "date": "2026-07-15",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "date": "2026-07-16",
+        "page": "https://windowplantlab.com/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 85
+      },
+      {
+        "date": "2026-07-16",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 57
+      },
+      {
+        "date": "2026-07-17",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 60.5
+      },
+      {
+        "date": "2026-07-18",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 60
+      },
+      {
+        "date": "2026-07-19",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 48.333333333333336
+      },
+      {
+        "date": "2026-07-19",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "date": "2026-07-20",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 50.2
+      },
+      {
+        "date": "2026-07-20",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 90
+      }
+    ],
+    "clickExpectation": {
+      "atOnePercentCtr": 0.42,
+      "atFivePercentCtr": 2.1,
+      "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
+    },
     "topPageQueries": [
       {
         "page": "https://windowplantlab.com/light-meter/",
@@ -189,12 +442,68 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-06-23T17:14:05.777Z",
-      "end": "2026-07-23T17:14:05.777Z"
+      "start": "2026-06-23T22:21:52.262Z",
+      "end": "2026-07-23T22:21:52.262Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
     "topPages": [],
     "referrers": []
+  },
+  "liveSiteChecks": {
+    "status": "ok",
+    "checkedAt": "2026-07-23T22:21:53.982Z",
+    "pages": [
+      {
+        "url": "https://windowplantlab.com/",
+        "status": 200,
+        "ok": true,
+        "finalUrl": "https://windowplantlab.com/",
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasStructuredData": true,
+        "canonical": "https://windowplantlab.com/"
+      },
+      {
+        "url": "https://windowplantlab.com/light-meter/",
+        "status": 200,
+        "ok": true,
+        "finalUrl": "https://windowplantlab.com/light-meter/",
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasStructuredData": true,
+        "canonical": "https://windowplantlab.com/light-meter/"
+      },
+      {
+        "url": "https://windowplantlab.com/plant-distance-calculator/",
+        "status": 200,
+        "ok": true,
+        "finalUrl": "https://windowplantlab.com/plant-distance-calculator/",
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasStructuredData": true,
+        "canonical": "https://windowplantlab.com/plant-distance-calculator/"
+      },
+      {
+        "url": "https://windowplantlab.com/north-facing-window-plants/",
+        "status": 200,
+        "ok": true,
+        "finalUrl": "https://windowplantlab.com/north-facing-window-plants/",
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasStructuredData": true,
+        "canonical": "https://windowplantlab.com/north-facing-window-plants/"
+      },
+      {
+        "url": "https://windowplantlab.com/low-light-plant-placement-checklist/",
+        "status": 200,
+        "ok": true,
+        "finalUrl": "https://windowplantlab.com/low-light-plant-placement-checklist/",
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasStructuredData": true,
+        "canonical": "https://windowplantlab.com/low-light-plant-placement-checklist/"
+      }
+    ]
   }
 }

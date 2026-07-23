@@ -215,7 +215,7 @@
         }
       ],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-23T17:13:55.860Z",
+      "lastApiCheck": "2026-07-23T22:21:45.154Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -226,7 +226,7 @@
       "topPages": [],
       "referrers": [],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-23T17:13:55.860Z",
+      "lastApiCheck": "2026-07-23T22:21:45.154Z",
       "ingestionStatus": "ok"
     }
   },
