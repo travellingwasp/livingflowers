@@ -53,6 +53,9 @@ Rules:
 * Do not buy or exchange backlinks.
 * Do not repeat a failed action unless a variable changed and the reason is documented.
 * Prefer improving proven opportunities over creating new pages.
+* Never edit automation, workflow, dependency, configuration, or executable script files.
+* Only reference files that exist in the supplied repository context, unless the action explicitly creates a new content or public asset file.
+* Keep the daily change to at most 12 files and 500 KB in total.
 
 After choosing the action:
 

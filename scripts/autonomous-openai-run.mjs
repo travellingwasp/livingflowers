@@ -1,5 +1,6 @@
-import { readFile, writeFile, readdir } from "node:fs/promises";
+import { readFile, writeFile, readdir, mkdir, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { spawn } from "node:child_process";
 import path from "node:path";
 
 const root = process.cwd();
@@ -20,16 +21,14 @@ const requiredReads = [
   "data/metrics-snapshot.json"
 ];
 
-const editablePrefixes = [
-  "src/",
-  "content/",
-  "public/",
-  "data/",
-  "journal/",
-  "scripts/",
-  ".github/",
-  ""
-];
+const editablePrefixes = ["src/", "content/", "public/", "data/", "journal/"];
+
+const editableRootFiles = new Set([
+  "LESSONS_LEARNED.md",
+  "STRATEGY.md",
+  "METRICS.md",
+  "EDITORIAL_POLICY.md"
+]);
 
 const protectedPaths = new Set([
   "package-lock.json",
@@ -63,7 +62,10 @@ function assertSafePath(relativePath) {
       throw new Error(`Protected path cannot be edited: ${relativePath}`);
     }
   }
-  if (!editablePrefixes.some((prefix) => normalized.startsWith(prefix))) {
+  if (
+    !editableRootFiles.has(normalized) &&
+    !editablePrefixes.some((prefix) => normalized.startsWith(prefix))
+  ) {
     throw new Error(`Path is outside editable areas: ${relativePath}`);
   }
   return normalized;
@@ -110,12 +112,20 @@ function validatePlan(plan) {
   if (!plan || typeof plan !== "object") throw new Error("Response JSON must be an object.");
   if (!Array.isArray(plan.edits)) throw new Error("Response JSON must include an edits array.");
   if (typeof plan.terminal_report !== "string") throw new Error("Response JSON must include terminal_report.");
+  if (plan.edits.length === 0) throw new Error("The daily plan must contain at least one edit.");
+  if (plan.edits.length > 12) throw new Error("The daily plan exceeds the 12-file safety limit.");
+  const seenPaths = new Set();
+  let totalBytes = 0;
   for (const edit of plan.edits) {
     if (!edit || typeof edit.path !== "string" || typeof edit.content !== "string") {
       throw new Error("Each edit must have string path and content.");
     }
-    assertSafePath(edit.path);
+    const normalized = assertSafePath(edit.path);
+    if (seenPaths.has(normalized)) throw new Error(`Duplicate edit path: ${normalized}`);
+    seenPaths.add(normalized);
+    totalBytes += Buffer.byteLength(edit.content, "utf8");
   }
+  if (totalBytes > 500_000) throw new Error("The daily plan exceeds the 500 KB safety limit.");
 }
 
 async function callOpenAI(input) {
@@ -160,8 +170,59 @@ async function applyEdits(edits) {
   for (const edit of edits) {
     const relativePath = assertSafePath(edit.path);
     const full = path.join(root, relativePath);
+    await mkdir(path.dirname(full), { recursive: true });
     await writeFile(full, edit.content);
   }
+}
+
+function runChecks() {
+  return new Promise((resolve, reject) => {
+    const child = spawn("npm", ["run", "check"], {
+      cwd: root,
+      env: { ...process.env, SITE_URL: process.env.SITE_URL || "https://example.com" },
+      stdio: "inherit"
+    });
+    child.on("error", reject);
+    child.on("exit", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error(`Generated changes failed validation (exit code ${code}).`));
+    });
+  });
+}
+
+async function snapshotEdits(edits) {
+  return Promise.all(
+    edits.map(async ({ path: relativePath }) => ({
+      path: assertSafePath(relativePath),
+      existed: existsSync(path.join(root, relativePath)),
+      content: await readIfExists(relativePath)
+    }))
+  );
+}
+
+async function rollbackEdits(snapshot) {
+  for (const entry of snapshot) {
+    const full = path.join(root, entry.path);
+    if (entry.existed) await writeFile(full, entry.content);
+    else await rm(full, { force: true });
+  }
+}
+
+async function writeFailureRecord(today, error) {
+  const message = error instanceof Error ? error.message : String(error);
+  const normalJournalPath = path.join(root, "journal", `${today}.md`);
+  const journalPath = existsSync(normalJournalPath)
+    ? path.join(root, "journal", `${today}-rejected.md`)
+    : normalJournalPath;
+  await mkdir(path.dirname(journalPath), { recursive: true });
+  await writeFile(
+    journalPath,
+    `# Daily operation - ${today}\n\n## Status\n\nNo site change was published. The generated proposal was rejected by the safety checks.\n\n## Blocker\n\n${message}\n\n## Next action\n\nRetry on the next scheduled run using the verified metrics snapshot.\n`
+  );
+  await writeFile(
+    reportPath,
+    `# Daily OpenAI Report - ${today}\n\nModel: ${model}\n\nSTATUS: REJECTED SAFELY\nBLOCKER: ${message}\nACTION: No generated site change was published.\n`
+  );
 }
 
 async function main() {
@@ -205,7 +266,14 @@ ${journalText}
 
   const plan = await callOpenAI(instruction);
   validatePlan(plan);
-  await applyEdits(plan.edits);
+  const snapshot = await snapshotEdits(plan.edits);
+  try {
+    await applyEdits(plan.edits);
+    await runChecks();
+  } catch (error) {
+    await rollbackEdits(snapshot);
+    throw error;
+  }
   await writeFile(
     reportPath,
     `# Daily OpenAI Report - ${today}
@@ -222,7 +290,13 @@ ${plan.summary || "No summary provided."}
   console.log(plan.terminal_report);
 }
 
-main().catch((error) => {
+main().catch(async (error) => {
   console.error(error);
-  process.exit(1);
+  try {
+    await writeFailureRecord(formatDateBucharest(), error);
+    console.log("Invalid daily proposal was rolled back and recorded for review.");
+  } catch (recordError) {
+    console.error(recordError);
+    process.exitCode = 1;
+  }
 });

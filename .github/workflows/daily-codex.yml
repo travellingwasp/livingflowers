@@ -33,6 +33,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+      - name: Confirm daily operation produced an auditable record
+        run: test -f "journal/$(TZ=Europe/Bucharest date +%F).md" && test -f data/daily-openai-report.md
       - run: npm run check
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://example.com' }}
