@@ -36,6 +36,12 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Operational rule: When external metric visibility is delayed, prioritize snippet readiness (meta title/description) and minimal structured data to improve the site's appearance in search results as soon as indexing information appears.
   - Status: active
 
+- First observed date: 2026-07-23
+  - Evidence: Pages on the site already show impressions in Search Console but zero clicks; improving meta title and description (snippet content) is a low-effort, high-leverage action that can raise CTR quickly once Google re-crawls and refreshes the snippet.
+  - Confidence: medium
+  - Operational rule: When pages have impressions but no clicks, prioritize tightening the meta title and description to: 1) match the likely query intent, 2) state clear user benefit, and 3) include a concise call to action or unique utility (e.g., "estimator", "checklist", "calculator"). Track CTR in Search Console for two weekly refresh cycles to validate impact.
+  - Status: active
+
 ## Distribution lessons
 
 - None yet.
@@ -55,9 +61,9 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Status: recommended
 
 - First observed date: 2026-07-21
-  - Evidence: A sample file (data/manual-metrics-import.json) is now present in the repository. This allows the owner to drop real exports into the repository so the daily agent can make data-driven choices while API credentials remain unavailable.
+  - Evidence: A sample file (data/manual-metrics-import.json) is now present in the repository. This allows the owner to drop real exports into the repository so the daily agent can read metrics while API credentials remain unavailable.
   - Confidence: high
-  - Operational rule: When API access is not feasible, upload a vetted manual metrics snapshot weekly (or daily if available) using the sample schema. The daily agent will treat uploaded snapshots as authoritative for the run day.
+  - Operational rule: When API access is infeasible, upload a vetted manual metrics snapshot weekly (or daily if available) using the sample schema. The daily agent will treat uploaded snapshots as authoritative for the run day.
   - Status: active
 
 ## Workflow lessons
@@ -94,7 +100,4 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 - Produce crawl artifacts and canonical mappings immediately when indexing is the primary bottleneck; do not wait for owner deployment to create these repository-level files.
 - When metric ingestion is delayed, prepare snippet-ready metadata (meta titles and descriptions) and document a manual import path for metrics to enable data-driven daily decisions.
-
-## Operational recommendation (2026-07-21)
-
-- If automatic metric ingestion is unavailable, the owner should provide a manual export (JSON or CSV converted to the sample schema in `data/manual-metrics-import.json`) no less than once per week. The daily agent will read that file and populate `data/metrics-snapshot.json` for runs where APIs are not configured. This reduces decision paralysis and keeps the experiment moving while preserving data provenance.
+- When pages show impressions but zero clicks, updating and clarifying meta titles/descriptions to match query intent and state concrete utility is a low-effort action that should be tried before producing new pages.

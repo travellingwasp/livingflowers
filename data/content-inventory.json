@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-07-23",
   "siteDomain": "https://windowplantlab.com",
   "pages": [
     {
@@ -16,7 +16,7 @@
       "indexed": "unknown",
       "meta_title": "WindowPlant Lab — Apartment plant light estimator & placement guide",
       "meta_description": "Practical workflow and tools to match apartment window light to houseplant placement. Use the estimator and diagrams to find the best spot for your plants.",
-      "lastUpdated": "2026-07-21"
+      "lastUpdated": "2026-07-23"
     },
     {
       "path": "/light-meter/",
@@ -30,9 +30,9 @@
       ],
       "canonical": "https://windowplantlab.com/light-meter/",
       "indexed": "unknown",
-      "meta_title": "Plant Light Estimator — Window direction & distance guide",
-      "meta_description": "Estimate how much light a spot in your apartment receives using window direction, distance, and obstructions — no light meter required.",
-      "lastUpdated": "2026-07-21"
+      "meta_title": "Plant Light Estimator — window direction & distance guide",
+      "meta_description": "Quick estimator: enter window direction, distance, and obstructions to get a practical light rating for your spot — no meter required. Useful for renters who need placement advice fast.",
+      "lastUpdated": "2026-07-23"
     },
     {
       "path": "/plant-distance-calculator/",
@@ -46,9 +46,9 @@
       ],
       "canonical": "https://windowplantlab.com/plant-distance-calculator/",
       "indexed": "unknown",
-      "meta_title": "Plant Distance Calculator — Where to place plants near a window",
-      "meta_description": "Simple calculator and rules-of-thumb for starting distances from different window types and obstructions to keep plants healthy in apartments.",
-      "lastUpdated": "2026-07-21"
+      "meta_title": "Plant Distance Calculator — where to place plants near a window",
+      "meta_description": "Enter your window type and obstruction to get a recommended starting distance for potted plants. Includes quick rules-of-thumb for apartments and balconies.",
+      "lastUpdated": "2026-07-23"
     },
     {
       "path": "/north-facing-window-plants/",
@@ -62,9 +62,9 @@
       ],
       "canonical": "https://windowplantlab.com/north-facing-window-plants/",
       "indexed": "unknown",
-      "meta_title": "North-facing window plants — Best choices for low-light apartments",
-      "meta_description": "Plants that tolerate north-facing windows plus placement zones, care tips, and signs it's too dark for a given species.",
-      "lastUpdated": "2026-07-21"
+      "meta_title": "North-facing window plants — best choices & placement tips for low-light apartments",
+      "meta_description": "Plants that tolerate north-facing windows, placement zones, and simple care tips. Quick guidance for renters who want reliable low-light houseplants without guesswork.",
+      "lastUpdated": "2026-07-23"
     },
     {
       "path": "/low-light-plant-placement-checklist/",
@@ -78,8 +78,8 @@
       ],
       "canonical": "https://windowplantlab.com/low-light-plant-placement-checklist/",
       "indexed": "unknown",
-      "meta_title": "Low-light plant placement checklist — Will a spot support a plant?",
-      "meta_description": "A short pass/fail checklist and decision tree to decide if a dim corner in your apartment can realistically support a potted plant.",
+      "meta_title": "Low-light plant placement checklist — will this spot support a plant?",
+      "meta_description": "A short pass/fail checklist and decision tree to decide if a dim corner in your apartment can realistically support a potted plant. Includes signs that the spot is too dark.",
       "lastUpdated": "2026-07-21"
     }
   ]
