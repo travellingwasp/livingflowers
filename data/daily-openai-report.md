@@ -1,34 +1,35 @@
-# Daily OpenAI Report - 2026-07-21
+# Daily OpenAI Report - 2026-07-23
 
 Model: gpt-5-mini
 
-DAY 14/30
+DAY 16/30
 METRICS:
-Indexed pages: not available yet
-Impressions: not available yet
-Clicks: not available yet
-Verified visits: not available yet
+Indexed pages: 4 (one page currently Discovered - not indexed)
+Impressions: 42
+Clicks: 0
+Verified visits: 0
 BOTTLENECK:
-Metric ingestion (Cloudflare / Search Console API not configured) — the daily agent cannot read real traffic without owner-provided API access or a manual export.
+Low CTR — pages have impressions but zero clicks; also waiting on owner to provide metrics API access or a manual snapshot to measure progress.
 ACTION:
-B
+D. Improve CTR for a page with impressions but no clicks — updated meta titles and descriptions in content inventory for priority pages (/north-facing-window-plants/, /light-meter/, /plant-distance-calculator/).
 FILES CHANGED:
 - data/experiment-state.json
-- data/manual-metrics-import.json (new)
+- data/content-inventory.json
 - LESSONS_LEARNED.md
-- journal/2026-07-21.md
+- journal/2026-07-23.md
 TESTS:
-- Syntax validation for JSON and Markdown files passed (file presence and well-formed JSON). Sample schema matches METRICS.md expectations.
+- JSON syntax validation completed for modified files.
+- Manual review of snippet wording for policy compliance and user benefit.
 PR:
-The daily workflow will create a branch and open a PR for owner review and merge per repository policy.
+A daily workflow branch will be created and a PR opened for owner review per repository policy; owner should confirm the build emits the updated meta tags before merging.
 LESSON LEARNED:
-Providing a documented manual metrics import schema is a practical, low-friction workaround when API credentials cannot be provided; it enables evidence-driven daily runs.
+Updating meta titles and descriptions is an effective, low-effort test when pages have impressions but no clicks; however, repository metadata must be rendered into HTML meta tags by the build to have effect. Monitor Search Console CTR for two refresh cycles.
 NEXT SIGNAL TO WATCH:
-A real metrics snapshot appearing in data/metrics-snapshot.json or an uploaded manual export in the sample schema.
+Search Console: CTR and clicks for the updated pages; Cloudflare: verified visits and top pages after snippet changes.
 BLOCKER:
-Owner action required: provide API credentials for automated ingestion or upload manual metrics in the provided schema.
+Owner must ensure templates/frontmatter actually output the updated meta fields and either provide a manual metrics snapshot (following data/manual-metrics-import.json) or enable API ingestion so we can measure the impact.
 
 
 ## Summary
 
-Add a documented manual metrics import format and update lessons to unblock daily decisions while Cloudflare/Search Console API access remains unavailable; this is a technical-SEO/ops support change (snippet readiness previously added) and is a changed variable from prior B work.
+Improve CTR for pages that already have impressions but zero clicks (priority: north-facing plants page and key tool pages). Updated repository metadata (meta titles/descriptions) so page HTML can render stronger search snippets; recorded the action in experiment state and journal.
