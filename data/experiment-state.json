@@ -63,7 +63,7 @@
   "metrics": {
     "googleSearchConsole": {
       "configured": true,
-      "impressions": 45,
+      "impressions": 47,
       "clicks": 0,
       "indexedPages": 4,
       "sitemapSubmitted": true,
@@ -223,7 +223,7 @@
         }
       ],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-24T07:42:48.132Z",
+      "lastApiCheck": "2026-07-25T07:29:31.291Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -234,7 +234,7 @@
       "topPages": [],
       "referrers": [],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-24T07:42:48.132Z",
+      "lastApiCheck": "2026-07-25T07:29:31.291Z",
       "ingestionStatus": "ok"
     }
   },

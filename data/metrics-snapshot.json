@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-24T07:42:48.132Z",
+  "generatedAt": "2026-07-25T07:29:31.291Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-06-24",
-      "endDate": "2026-07-21"
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-22"
     },
-    "actualDataEndDate": "2026-07-21",
+    "actualDataEndDate": "2026-07-22",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 45,
+    "impressions": 47,
     "ctr": 0,
-    "position": 52.44444444444444,
+    "position": 50.5531914893617,
     "indexedPages": 4,
     "inspections": [
       {
@@ -146,6 +146,13 @@
         "impressions": 3,
         "ctr": 0,
         "position": 43.333333333333336
+      },
+      {
+        "date": "2026-07-22",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
       }
     ],
     "pageDailySeries": [
@@ -300,11 +307,27 @@
         "impressions": 3,
         "ctr": 0,
         "position": 43.333333333333336
+      },
+      {
+        "date": "2026-07-22",
+        "page": "https://windowplantlab.com/light-meter/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "date": "2026-07-22",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.45,
-      "atFivePercentCtr": 2.25,
+      "atOnePercentCtr": 0.47,
+      "atFivePercentCtr": 2.35,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -465,8 +488,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-06-24T07:42:54.983Z",
-      "end": "2026-07-24T07:42:54.983Z"
+      "start": "2026-06-25T07:29:38.237Z",
+      "end": "2026-07-25T07:29:38.237Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -475,7 +498,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-07-24T07:42:55.969Z",
+    "checkedAt": "2026-07-25T07:29:39.957Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
