@@ -67,6 +67,23 @@
       "lastUpdated": "2026-07-23"
     },
     {
+      "path": "/east-facing-window-plants/",
+      "type": "guide",
+      "status": "published",
+      "primaryProblem": "Choose plants and starting distances for an east-facing apartment window.",
+      "originalUtility": "Distance-zone table, seasonal adjustments, diagnostic signs, and placement workflow.",
+      "targetQueries": [
+        "east facing window plants",
+        "plants for east facing window",
+        "how far from east facing window plants"
+      ],
+      "canonical": "https://windowplantlab.com/east-facing-window-plants/",
+      "indexed": "unknown",
+      "meta_title": "East-Facing Window Plants: Morning-Sun Placement Guide",
+      "meta_description": "Choose plants for an east-facing window using practical distance zones, morning-sun tolerance, warning signs, and apartment-specific placement advice.",
+      "lastUpdated": "2026-07-26"
+    },
+    {
       "path": "/low-light-plant-placement-checklist/",
       "type": "checklist",
       "status": "published",
