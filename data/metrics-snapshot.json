@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-25T07:29:31.291Z",
+  "generatedAt": "2026-07-26T07:46:52.932Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-06-25",
-      "endDate": "2026-07-22"
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-23"
     },
-    "actualDataEndDate": "2026-07-22",
+    "actualDataEndDate": "2026-07-23",
     "dataLagDays": 3,
     "clicks": 0,
     "impressions": 47,
@@ -34,6 +34,11 @@
         "url": "https://windowplantlab.com/north-facing-window-plants/",
         "verdict": "PASS",
         "coverageState": "Submitted and indexed"
+      },
+      {
+        "url": "https://windowplantlab.com/east-facing-window-plants/",
+        "verdict": "NEUTRAL",
+        "coverageState": "URL is unknown to Google"
       },
       {
         "url": "https://windowplantlab.com/low-light-plant-placement-checklist/",
@@ -153,6 +158,13 @@
         "impressions": 2,
         "ctr": 0,
         "position": 8
+      },
+      {
+        "date": "2026-07-23",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
       }
     ],
     "pageDailySeries": [
@@ -488,8 +500,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-06-25T07:29:38.237Z",
-      "end": "2026-07-25T07:29:38.237Z"
+      "start": "2026-06-26T07:46:59.736Z",
+      "end": "2026-07-26T07:46:59.736Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -498,7 +510,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-07-25T07:29:39.957Z",
+    "checkedAt": "2026-07-26T07:47:01.251Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
@@ -539,6 +551,16 @@
         "hasDescription": true,
         "hasStructuredData": true,
         "canonical": "https://windowplantlab.com/north-facing-window-plants/"
+      },
+      {
+        "url": "https://windowplantlab.com/east-facing-window-plants/",
+        "status": 200,
+        "ok": true,
+        "finalUrl": "https://windowplantlab.com/east-facing-window-plants/",
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasStructuredData": true,
+        "canonical": "https://windowplantlab.com/east-facing-window-plants/"
       },
       {
         "url": "https://windowplantlab.com/low-light-plant-placement-checklist/",
