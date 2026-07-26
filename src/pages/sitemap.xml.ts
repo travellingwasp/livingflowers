@@ -6,6 +6,7 @@ const pages = [
   "/light-meter/",
   "/plant-distance-calculator/",
   "/north-facing-window-plants/",
+  "/east-facing-window-plants/",
   "/low-light-plant-placement-checklist/",
   "/about/",
   "/editorial-policy/",

@@ -3,6 +3,11 @@ import { site } from "../site";
 
 const items = [
   {
+    title: "East-Facing Window Plants: Morning-Sun Placement Guide",
+    path: "/east-facing-window-plants/",
+    description: "Choose plants and practical distance zones for an east-facing apartment window."
+  },
+  {
     title: "Houseplant Window Light Estimator",
     path: "/light-meter/",
     description: "Estimate apartment plant light by direction, distance, and obstruction."
