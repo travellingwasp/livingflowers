@@ -1,28 +1,28 @@
-# Daily OpenAI Report - 2026-07-26
+# Daily OpenAI Report - 2026-07-27
 
 Model: gpt-5-mini
 
-DAY 19/30
+DAY 20/30
 METRICS:
-- Google Search Console (actualDataEndDate 2026-07-23): impressions = 47, clicks = 0, indexedPages = 4.
-- Cloudflare Web Analytics (range end 2026-07-26T07:46:59.736Z): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
+- Google Search Console (actualDataEndDate 2026-07-24): impressions = 49, clicks = 0, indexedPages = 4.
+- Cloudflare Web Analytics (range end 2026-07-27): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
 BOTTLENECK:
-- Low CTR / no observed organic clicks despite impressions; authoritative GSC snapshot predates repository metadata edits (2026-07-23), so impact cannot be measured yet.
+- Low CTR / no observed organic clicks despite impressions; we have not yet observed verifiable human visits.
 ACTION:
-- K. Measure and wait — do not make further repository edits. Wait for GSC data that includes dates after 2026-07-23 (available after 2026-07-27) or for the owner to supply a fresh manual metrics snapshot.
+- H. Draft a legitimate distribution post for priority pages (/light-meter/ and /north-facing-window-plants/) so the owner can share them in relevant communities to generate real, verifiable traffic.
 FILES CHANGED:
-- None (no repository edits made).
+- None (distribution draft only; repository not modified).
 TESTS:
-- None run (waiting for fresh authoritative metrics; no changes to validate).
+- None (no repository edits).
 PR:
 - None.
 LESSON LEARNED:
-- 2026-07-26 | Evidence: authoritative GSC snapshot ends before the 2026-07-23 metadata change; Confidence: medium | Rule: Wait until Search Console actualDataEndDate includes the change date plus known data lag before evaluating CTR impact; avoid repeating identical metadata edits while authoritative data does not include the change. | status: active
+- 2026-07-27 | Evidence: GSC impressions present but clicks = 0 through 2026-07-24 and Cloudflare visits = 0 | Confidence: medium | Rule: When snippet edits do not yet produce clicks, prepare a community-focused, user-first distribution draft and measure whether legitimate sharing generates verifiable human visits before making further content edits. | status: active
 NEXT SIGNAL TO WATCH:
-- Search Console clicks and CTR for /north-facing-window-plants/, /light-meter/, and /plant-distance-calculator/ when data covers 2026-07-23 or later (available after 2026-07-27).
+- Cloudflare verifiedHumanVisits > 0 AND Google Search Console clicks > 0 for the linked pages in the distribution (evaluate 48–72 hours after posting or when a fresh metrics snapshot includes the post date).
 BLOCKER:
-- Authoritative measurement lag (current GSC snapshot ends 2026-07-23). Owner can unblock faster by uploading a manual metrics snapshot per the repository sample schema or by enabling more frequent Search Console API ingestion.
+- A human owner must post the distribution draft in communities where they are an accepted participant and then provide either a manual metrics snapshot or allow the automated ingestion to capture resulting visits so the agent can validate impact.
 
 ## Summary
 
-Wait for authoritative Search Console data that includes the 2026-07-23 metadata change before making further site edits; no repository edits today.
+Prepare a legitimate, user-first distribution draft for the highest-visibility tool page(s) so a human owner can share them in relevant plant communities to produce verifiable human visits and referrers.
