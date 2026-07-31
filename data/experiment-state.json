@@ -63,7 +63,7 @@
   "metrics": {
     "googleSearchConsole": {
       "configured": true,
-      "impressions": 58,
+      "impressions": 63,
       "clicks": 0,
       "indexedPages": 4,
       "sitemapSubmitted": true,
@@ -84,6 +84,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 81
+        },
+        {
+          "page": "https://windowplantlab.com/light-meter/",
+          "query": "how to measure light for plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 83
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -113,9 +121,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "best window direction for plants",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 85
+          "position": 84
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -124,6 +132,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 61
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "house plants for north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 64
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -223,6 +239,14 @@
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "plants for north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 63
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "plants north facing window",
           "clicks": 0,
           "impressions": 1,
@@ -247,7 +271,7 @@
         }
       ],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-30T07:43:07.677Z",
+      "lastApiCheck": "2026-07-31T08:10:35.961Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -258,7 +282,7 @@
       "topPages": [],
       "referrers": [],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-30T07:43:07.677Z",
+      "lastApiCheck": "2026-07-31T08:10:35.961Z",
       "ingestionStatus": "ok"
     }
   },
