@@ -63,7 +63,7 @@
   "metrics": {
     "googleSearchConsole": {
       "configured": true,
-      "impressions": 63,
+      "impressions": 67,
       "clicks": 0,
       "indexedPages": 4,
       "sitemapSubmitted": true,
@@ -113,9 +113,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "best plants for north-facing windows",
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 6,
           "ctr": 0,
-          "position": 26.4
+          "position": 27
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -129,9 +129,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "good plants for north facing windows",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 61
+          "position": 62.5
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -185,9 +185,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "north facing window plants",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 77
+          "position": 77.5
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -271,7 +271,7 @@
         }
       ],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-31T08:10:35.961Z",
+      "lastApiCheck": "2026-08-01T07:38:22.020Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -282,7 +282,7 @@
       "topPages": [],
       "referrers": [],
       "apiConfigured": true,
-      "lastApiCheck": "2026-07-31T08:10:35.961Z",
+      "lastApiCheck": "2026-08-01T07:38:22.020Z",
       "ingestionStatus": "ok"
     }
   },

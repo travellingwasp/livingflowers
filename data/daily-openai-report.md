@@ -1,28 +1,30 @@
-# Daily OpenAI Report - 2026-07-31
+# Daily OpenAI Report - 2026-08-01
 
 Model: gpt-5-mini
 
-DAY 24/30
+DAY 25/30
 METRICS:
-- Google Search Console (actualDataEndDate 2026-07-28): impressions = 63, clicks = 0, indexedPages = 4.
-- Cloudflare Web Analytics (range end 2026-07-31): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
+- Google Search Console (authoritative snapshot end 2026-07-29): impressions = 67, clicks = 0, indexedPages = 4.
+- Cloudflare Web Analytics (range end 2026-08-01T07:38:28.842Z): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
 BOTTLENECK:
-- Low CTR and zero verified human visits despite repeat impressions; no owner-posted distribution evidence available.
+- Impressions exist but zero organic clicks and zero verified human visits; owner distribution was prepared but not executed. With limited time remaining, improving the highest-impression page's immediate utility is the next highest-leverage action.
 ACTION:
-- H. Provide an owner-postable distribution draft so a human owner can publish in relevant plant communities to generate verifiable human visits and referrers (agent will not post).
+- C. Improve an existing page with impressions — implemented: added a quick checklist and a compact recommended-plants table to /north-facing-window-plants/ to increase on-page usefulness and the chance of clicks and engagement.
 FILES CHANGED:
-- 0 (no repository edits; distribution draft only).
+- content/north-facing-window-plants.md (new): added a short checklist, plant recommendation table, CTA to the estimator, and metadata in frontmatter.
+- data/content-inventory.json (updated): updated lastUpdated to 2026-08-01 and added on_page_components for /north-facing-window-plants/.
 TESTS:
-- None (no repository edits to validate). Live site checks already confirm pages return 200 and include title/description/structured data/canonical.
+- CI will run repository checks and build (npm run check / npm run build) after this commit; liveSiteChecks already indicate pages return 200 and metadata renders per the latest snapshot. The agent did not execute CI locally.
 PR:
-- None.
+- A daily branch will be created and a PR opened by the runner as required by repo policy.
 LESSON LEARNED:
-- 2026-07-31 | Evidence: GSC impressions present but clicks = 0 through 2026-07-28 and Cloudflare verifiedHumanVisits = 0 despite meta updates rendering in HTML | Confidence: medium | Rule: When snippet/meta edits are live but authoritative GSC shows no clicks, prepare a strictly helpful distribution draft and ask the human owner to post it; measure 48–72 hours; if owner doesn't post within 48 hours, pivot to improving on-page utility for the highest-impression page. | status: active
+- 2026-08-01 | Evidence: repeated GSC impressions on /north-facing-window-plants/ with zero clicks and no owner-posted distribution (data/metrics-snapshot.json and prior journals) | Confidence: medium | Rule: When impressions exist and owner distribution is not executed within the expected window, implement a small, honest on-page utility improvement (checklist/table/CTA) on the highest-impression page to create a clearer click/relevance signal before publishing new pages or repeating snippet edits. | status: active
 NEXT SIGNAL TO WATCH:
-- Cloudflare verifiedHumanVisits > 0 AND Google Search Console clicks > 0 for pages linked in the owner post (evaluate after 2026-08-02).
+- Google Search Console clicks and CTR for https://windowplantlab.com/north-facing-window-plants/ AND Cloudflare verifiedHumanVisits for that page in subsequent snapshots or an owner-provided manual snapshot. Earliest practical evaluation date: 2026-08-04 (allow GSC data lag and time for impressions post-change).
 BLOCKER:
-- A human owner must publish the distribution draft from an account that follows community rules and then either upload a manual metrics snapshot or allow automated ingestion so the agent can validate resulting traffic.
+- Authoritative measurement lag in Search Console and the continuing absence of owner-posted distribution or manual metrics snapshots. If the owner can post the prepared distribution or provide a manual metrics snapshot including any owner-post date, evaluation can accelerate.
+
 
 ## Summary
 
-Provide an owner-postable, community-first distribution draft for the highest-visibility tool and guide pages so a human owner can post and produce independently verifiable visits/referrers.
+Improve the highest-impression page (/north-facing-window-plants/) by adding an explicit quick checklist and a concise recommended-plants table to increase on-page utility and raise the chance of clicks and engagement.
