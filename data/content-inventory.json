@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23",
+  "updated": "2026-08-01",
   "siteDomain": "https://windowplantlab.com",
   "pages": [
     {
@@ -55,7 +55,7 @@
       "type": "guide",
       "status": "published",
       "primaryProblem": "Choose plants for a north-facing apartment window.",
-      "originalUtility": "Selection table with placement zones and failure signs.",
+      "originalUtility": "Selection table with placement zones and failure signs. Now includes a short checklist and a compact recommended-plants table to improve immediate on-page utility.",
       "targetQueries": [
         "north facing window plants apartment",
         "plants for north window"
@@ -64,7 +64,11 @@
       "indexed": "unknown",
       "meta_title": "North-facing window plants — best choices & placement tips for low-light apartments",
       "meta_description": "Plants that tolerate north-facing windows, placement zones, and simple care tips. Quick guidance for renters who want reliable low-light houseplants without guesswork.",
-      "lastUpdated": "2026-07-23"
+      "on_page_components": [
+        "quick_checklist",
+        "recommended_plants_table"
+      ],
+      "lastUpdated": "2026-08-01"
     },
     {
       "path": "/east-facing-window-plants/",
