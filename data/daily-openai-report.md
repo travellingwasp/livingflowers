@@ -1,15 +1,15 @@
-# Daily OpenAI Report - 2026-08-04
+# Daily OpenAI Report - 2026-08-05
 
 Model: gpt-5-mini
 
-DAY 28/30
+DAY 29/30
 METRICS:
-- Google Search Console (actualDataEndDate 2026-08-01): impressions = 78, clicks = 0, indexedPages = 5.
-- Cloudflare Web Analytics (range end 2026-08-04T07:48:56.356Z): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
+- Google Search Console (actualDataEndDate 2026-08-02): impressions = 83, clicks = 0, indexedPages = 5.
+- Cloudflare Web Analytics (range end 2026-08-05T07:57:17.018Z): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
 BOTTLENECK:
-- No independently verifiable human visits yet (GSC clicks = 0 and Cloudflare verifiedHumanVisits = 0). On-page improvements (committed 2026-08-01) did not produce clicks in the latest authoritative snapshot. The current operational blocker is the absence of owner-led legitimate distribution and the short remaining time window.
+- Repeated impressions but zero organic clicks and zero verified human visits; the immediate operational blocker is the lack of owner-led legitimate distribution (the agent cannot post) and limited remaining time (1 day left).
 ACTION:
-- H. Provide owner-postable, community-first distribution drafts for /light-meter/ and /north-facing-window-plants/. Agent will not post; owner must publish from an account that follows community rules.
+- H. Provide owner-postable, community-first distribution drafts for /light-meter/ and /north-facing-window-plants/ so the human owner can publish and (ideally) create verifiable human visits and referrers.
 FILES CHANGED:
 - 0 (distribution draft only; no repository edits).
 TESTS:
@@ -17,12 +17,12 @@ TESTS:
 PR:
 - None.
 LESSON LEARNED:
-- 2026-08-04 | Evidence: GSC actualDataEndDate 2026-08-01 shows impressions but clicks remain 0 after on-page changes; Cloudflare verifiedHumanVisits = 0 (data/metrics-snapshot.json) | Confidence: medium | Rule: When impressions exist but authoritative snapshots show zero clicks after reasonable on-page improvements, prepare a respectful, community-first distribution draft and ask the human owner to post it (measure 48–72 hours) rather than making more site edits that could confound evaluation. | status: active
+- 2026-08-05 | Evidence: data/metrics-snapshot.json shows impressions = 83 and clicks = 0 through actualDataEndDate 2026-08-02, and the Aug 1 on-page change did not produce clicks by that snapshot | Confidence: medium | Rule: When impressions exist but authoritative snapshots show zero clicks after honest on-page improvements and time is short, prepare a respectful, community-first distribution draft and ask the human owner to post (measure 48–72 hours) rather than making more repository edits that would confound evaluation. | status: active
 NEXT SIGNAL TO WATCH:
-- Cloudflare verifiedHumanVisits > 0 for any linked page AND Google Search Console clicks > 0 for those page(s) in an authoritative snapshot whose actualDataEndDate >= post date (or in a manual metrics snapshot provided by the owner). Earliest practical evaluation date: 2026-08-06.
+- Cloudflare verifiedHumanVisits > 0 for any linked page AND Google Search Console clicks > 0 for the same page(s) in an authoritative snapshot whose actualDataEndDate >= the owner post date (or in a manual metrics snapshot provided by the owner). Earliest practical evaluation date: 2026-08-07.
 BLOCKER:
 - A human owner must publish the distribution draft from an account that follows community rules and then either upload a manual metrics snapshot or allow automated ingestion so the agent can validate resulting traffic.
 
 ## Summary
 
-Owner-postable, community-first distribution drafts for /light-meter/ and /north-facing-window-plants/ to produce verifiable human visits and referrers; agent will not post.
+Provide owner-postable, community-first distribution drafts for the highest-visibility pages (light-meter and north-facing-window-plants) so the human owner can publish and produce verifiable human visits before the experiment ends.
