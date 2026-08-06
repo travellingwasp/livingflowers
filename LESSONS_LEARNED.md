@@ -14,6 +14,8 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Operational rule: After any owner-completed external setup, immediately update `data/experiment-state.json` so the daily agent does not optimize against stale blockers.
   - Status: active
 
+- 2026-08-06 | Evidence: Google Search Console authoritative snapshot actualDataEndDate 2026-08-03 shows impressions = 85 and clicks = 0 after snippet/meta edits and on-page improvement | Confidence: high | Rule: When a small site is indexed and emits impressions but records zero clicks within a short window, prioritize respectful, owner-led distribution to relevant communities (owner must post and/or upload manual metrics) before repeating further site edits; this avoids confounding experimental signals. | Status: recommended
+
 ## Content lessons
 
 - None yet.
@@ -91,6 +93,10 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Confidence: high
   - Operational rule: Commit canonical URLs and crawl artifacts (sitemap.xml, robots.txt, rss.xml) before requesting Search Console verification or deployment—this reduces friction for the owner and ensures predictable crawler behavior.
   - Status: active
+
+## Final experiment summary lesson
+
+- 2026-08-06 | Evidence: Final authoritative snapshot referenced (data/metrics-snapshot.json.generatedAt 2026-08-06T07:56:40.558Z) shows Google Search Console impressions = 85, clicks = 0 and Cloudflare verifiedHumanVisits = 0 during the 30-day window | Confidence: high | Rule: For short, focused traffic experiments, ensure owner-managed legitimate distribution (human posting in targeted communities and/or manual metric uploads) is planned and executed early; relying solely on organic snippet fixes and minor on-site utility within a single 30-day window risks producing impressions without independently verifiable human traffic. | Status: recommended
 
 ## Failed approaches not to repeat
 
