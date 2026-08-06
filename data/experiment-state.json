@@ -3,11 +3,12 @@
     "name": "WindowPlant Lab 30-day traffic experiment",
     "timezone": "Europe/Bucharest",
     "startDate": "2026-07-08",
+    "endDate": "2026-08-06",
     "lengthDays": 30,
-    "currentDay": 16,
+    "currentDay": 30,
     "domain": "windowplantlab.com",
     "siteUrlEnvVar": "SITE_URL",
-    "status": "live-measurement-pending"
+    "status": "ended"
   },
   "setup": {
     "githubRepository": "https://github.com/travellingwasp/livingflowers",
@@ -42,13 +43,13 @@
     }
   },
   "journalCoverage": {
-    "lastReconciled": "2026-07-23",
+    "lastReconciled": "2026-08-06",
     "missingDates": [
       "2026-07-09",
       "2026-07-10",
       "2026-07-11"
     ],
-    "note": "Journal gap recorded during repository reconciliation; no activity or metrics were inferred for the missing dates. Daily agent now records Day based on calendar to keep state current."
+    "note": "Journal gap recorded during repository reconciliation; no activity or metrics were inferred for the missing dates. Daily agent recorded Day based on calendar to keep state current. Experiment ended on 2026-08-06."
   },
   "niche": {
     "selected": "Renter-friendly houseplant light placement",
@@ -61,276 +62,49 @@
     ]
   },
   "metrics": {
-    "googleSearchConsole": {
-      "configured": true,
-      "impressions": 83,
-      "clicks": 0,
-      "indexedPages": 5,
-      "sitemapSubmitted": true,
-      "lastManualCheck": "2026-07-08",
-      "queries": [
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "east facing window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 59
+    "finalSnapshot": {
+      "generatedAt": "2026-08-06T07:56:40.558Z",
+      "googleSearchConsole": {
+        "status": "ok",
+        "range": {
+          "startDate": "2026-07-07",
+          "endDate": "2026-08-03"
         },
-        {
-          "page": "https://windowplantlab.com/light-meter/",
-          "query": "best direction for plants to face",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        },
-        {
-          "page": "https://windowplantlab.com/light-meter/",
-          "query": "bulb calculator",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 81
-        },
-        {
-          "page": "https://windowplantlab.com/light-meter/",
-          "query": "how to measure light for plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 83
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "are north facing windows good for plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 76
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "best plants for north facing window",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 32.66666666666667
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "best plants for north-facing windows",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 27
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "best window direction for plants",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 84
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "good plants for north facing windows",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 62.5
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "house plants for north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 64
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "house plants north facing windows",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 63
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "houseplants for north facing windows",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 65
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "indoor plants for north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 73
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "is a north facing window good for plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north east facing window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 64
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north facing window",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 55
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north facing window plants",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 74.5
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north facing windows plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 77
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north west facing window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 67
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north west window",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 66.66666666666667
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 64
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "northwest facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 55
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "northwest facing window plants",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 53
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plant for north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 58
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plants for north facing window",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 69.5
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plants for north facing windows",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 66
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plants north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "window leaves",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 67
-        },
-        {
-          "page": "https://windowplantlab.com/plant-distance-calculator/",
-          "query": "bulb planting calculator",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 86.66666666666667
-        }
-      ],
-      "apiConfigured": true,
-      "lastApiCheck": "2026-08-05T07:57:10.208Z",
-      "ingestionStatus": "ok"
-    },
-    "cloudflareWebAnalytics": {
-      "configured": true,
-      "verifiedHumanVisits": 0,
-      "ownerTestVisitObserved": true,
-      "lastManualCheck": "2026-07-08",
-      "topPages": [],
-      "referrers": [],
-      "apiConfigured": true,
-      "lastApiCheck": "2026-08-05T07:57:10.208Z",
-      "ingestionStatus": "ok"
+        "actualDataEndDate": "2026-08-03",
+        "dataLagDays": 3,
+        "clicks": 0,
+        "impressions": 85,
+        "ctr": 0,
+        "position": 56.470588235294116,
+        "indexedPages": 5,
+        "sitemapSubmitted": true,
+        "ingestionStatus": "ok"
+      },
+      "cloudflareWebAnalytics": {
+        "configured": true,
+        "verifiedHumanVisits": 0,
+        "verifiedHumanPageviews": 0,
+        "ownerTestVisitObserved": true,
+        "lastManualCheck": "2026-07-08",
+        "apiConfigured": true,
+        "lastApiCheck": "2026-08-06T07:56:40.558Z",
+        "ingestionStatus": "ok"
+      }
     }
   },
   "lastAction": {
-    "date": "2026-07-23",
-    "option": "D",
-    "summary": "Updated meta titles and meta descriptions in the content inventory for pages with impressions (priority: /north-facing-window-plants/, /light-meter/, /plant-distance-calculator/) to improve CTR in search results. Recorded the change and requested monitoring of Search Console CTR. Validation metric: inventory metadata updated; actual CTR change pending Google re-crawl and owner-provided metrics snapshot or API ingestion.",
-    "validationMetric": "Meta title/description fields updated in data/content-inventory.json; external clicks remain 0 until Google updates and Cloudflare/Search Console metrics are available."
+    "date": "2026-08-06",
+    "option": "J",
+    "summary": "Final report: experiment ended Day 30/30. Site indexed and emitted impressions but no independently verifiable human visits (GSC clicks=0, Cloudflare verified visits=0) during the window. Owner-led distribution remained unexecuted.",
+    "validationMetric": "Final authoritative snapshot referenced in metrics.finalSnapshot; no clicks and zero verified human visits recorded."
   },
   "ownerGated": [
     "Add Cloudflare API metrics access or manually import Cloudflare Web Analytics metrics (see data/manual-metrics-import.json for sample).",
-    "Add Google Search Console API access or manually import Search Console metrics (see data/manual-metrics-import.json for sample)."
+    "Add Google Search Console API access or manually import Search Console metrics (see data/manual-metrics-import.json for sample).",
+    "If post-experiment follow-up is desired, the owner should post a prepared distribution draft and upload a manual metrics snapshot so the agent can evaluate post-experiment distribution effectiveness."
   ],
   "technicalDebt": [
-    "Cloudflare Web Analytics metrics are not yet fetched automatically.",
-    "Google Search Console metrics are not yet fetched automatically.",
-    "Daily agent can make better decisions only after verified metrics are available in repository state."
+    "Cloudflare Web Analytics metrics were not fetched automatically early in the experiment in a usable way; manual import path was recommended.",
+    "Google Search Console metrics API was not configured for continuous ingestion; manual snapshots were supported but not supplied for owner-posted distribution evidence."
   ]
 }

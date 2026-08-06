@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-05T07:57:10.208Z",
+  "generatedAt": "2026-08-06T07:56:40.558Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-07-06",
-      "endDate": "2026-08-02"
+      "startDate": "2026-07-07",
+      "endDate": "2026-08-03"
     },
-    "actualDataEndDate": "2026-08-02",
+    "actualDataEndDate": "2026-08-03",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 83,
+    "impressions": 85,
     "ctr": 0,
-    "position": 56.2289156626506,
+    "position": 56.470588235294116,
     "indexedPages": 5,
     "inspections": [
       {
@@ -43,7 +43,7 @@
       {
         "url": "https://windowplantlab.com/low-light-plant-placement-checklist/",
         "verdict": "NEUTRAL",
-        "coverageState": "URL is unknown to Google"
+        "coverageState": "Discovered - currently not indexed"
       }
     ],
     "dailySeries": [
@@ -235,6 +235,13 @@
         "impressions": 5,
         "ctr": 0,
         "position": 68.8
+      },
+      {
+        "date": "2026-08-03",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 66.5
       }
     ],
     "pageDailySeries": [
@@ -533,11 +540,19 @@
         "impressions": 4,
         "ctr": 0,
         "position": 71.25
+      },
+      {
+        "date": "2026-08-03",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 66.5
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.83,
-      "atFivePercentCtr": 4.15,
+      "atOnePercentCtr": 0.85,
+      "atFivePercentCtr": 4.25,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -769,17 +784,25 @@
         "page": "https://windowplantlab.com/plant-distance-calculator/",
         "query": "bulb planting calculator",
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 4,
         "ctr": 0,
-        "position": 86.66666666666667
+        "position": 86
+      },
+      {
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "query": "how far is plant city from me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 49
       }
     ]
   },
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-07-06T07:57:17.018Z",
-      "end": "2026-08-05T07:57:17.018Z"
+      "start": "2026-07-07T07:56:47.496Z",
+      "end": "2026-08-06T07:56:47.496Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -788,7 +811,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-08-05T07:57:18.955Z",
+    "checkedAt": "2026-08-06T07:56:49.389Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",

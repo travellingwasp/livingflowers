@@ -1,28 +1,29 @@
-# Daily OpenAI Report - 2026-08-05
+# Daily OpenAI Report - 2026-08-06
 
 Model: gpt-5-mini
 
-DAY 29/30
+DAY 30/30
 METRICS:
-- Google Search Console (actualDataEndDate 2026-08-02): impressions = 83, clicks = 0, indexedPages = 5.
-- Cloudflare Web Analytics (range end 2026-08-05T07:57:17.018Z): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
+- Google Search Console (authoritative snapshot actualDataEndDate 2026-08-03): impressions = 85, clicks = 0, indexedPages = 5.
+- Cloudflare Web Analytics (range end 2026-08-06): verifiedHumanVisits = 0, verifiedHumanPageviews = 0.
 BOTTLENECK:
-- Repeated impressions but zero organic clicks and zero verified human visits; the immediate operational blocker is the lack of owner-led legitimate distribution (the agent cannot post) and limited remaining time (1 day left).
+- No independently verifiable human visits recorded during the 30-day experiment window despite indexed pages and recurring impressions; the operational bottleneck was the absence of owner-executed, legitimate distribution and manual metrics uploads.
 ACTION:
-- H. Provide owner-postable, community-first distribution drafts for /light-meter/ and /north-facing-window-plants/ so the human owner can publish and (ideally) create verifiable human visits and referrers.
+- J. Final report and mark experiment as ended (Day 30/30). Record final snapshot references and a reusable lesson recommending owner-led distribution early in short experiments.
 FILES CHANGED:
-- 0 (distribution draft only; no repository edits).
+- data/experiment-state.json (updated: mark experiment ended, currentDay=30, finalSnapshot reference added)
+- LESSONS_LEARNED.md (appended final experiment lesson)
 TESTS:
-- None (no repository edits to validate).
+- CI and build/test will run on the daily branch/PR as configured by repository workflows; no runtime tests executed in this agent step.
 PR:
-- None.
+- A branch and PR will be created by the daily runner per repository policy.
 LESSON LEARNED:
-- 2026-08-05 | Evidence: data/metrics-snapshot.json shows impressions = 83 and clicks = 0 through actualDataEndDate 2026-08-02, and the Aug 1 on-page change did not produce clicks by that snapshot | Confidence: medium | Rule: When impressions exist but authoritative snapshots show zero clicks after honest on-page improvements and time is short, prepare a respectful, community-first distribution draft and ask the human owner to post (measure 48–72 hours) rather than making more repository edits that would confound evaluation. | status: active
+- 2026-08-06 | Evidence: GSC authoritative snapshot actualDataEndDate 2026-08-03 shows impressions = 85 and clicks = 0; Cloudflare verifiedHumanVisits = 0 through 2026-08-06 | Confidence: high | Rule: For short experiments where the site already emits impressions, the fastest path to independently verifiable human traffic is respectful, owner-led distribution (owner posts and/or uploads manual metrics); agent-prepared drafts are necessary but not sufficient without owner action. | status: recommended
 NEXT SIGNAL TO WATCH:
-- Cloudflare verifiedHumanVisits > 0 for any linked page AND Google Search Console clicks > 0 for the same page(s) in an authoritative snapshot whose actualDataEndDate >= the owner post date (or in a manual metrics snapshot provided by the owner). Earliest practical evaluation date: 2026-08-07.
+- If the owner wishes post-experiment validation: Cloudflare verifiedHumanVisits > 0 for pages linked in any owner post AND Google Search Console clicks > 0 for those pages in an authoritative snapshot whose actualDataEndDate >= the owner post date (or in a manual metrics snapshot uploaded by the owner).
 BLOCKER:
-- A human owner must publish the distribution draft from an account that follows community rules and then either upload a manual metrics snapshot or allow automated ingestion so the agent can validate resulting traffic.
+- Owner must publish a prepared distribution draft from a legitimate account and/or upload manual metrics snapshots to enable post-experiment evaluation; without owner cooperation, the agent cannot create legitimate, verifiable external traffic.
 
 ## Summary
 
-Provide owner-postable, community-first distribution drafts for the highest-visibility pages (light-meter and north-facing-window-plants) so the human owner can publish and produce verifiable human visits before the experiment ends.
+End-of-experiment final report and mark experiment as ended (Day 30/30). Record final snapshot references and add a reusable lesson summarizing the operational outcome and the highest-leverage gap (owner-led distribution).
