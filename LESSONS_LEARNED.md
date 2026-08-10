@@ -98,6 +98,8 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 - 2026-08-06 | Evidence: Final authoritative snapshot referenced (data/metrics-snapshot.json.generatedAt 2026-08-06T07:56:40.558Z) shows Google Search Console impressions = 85, clicks = 0 and Cloudflare verifiedHumanVisits = 0 during the 30-day window | Confidence: high | Rule: For short, focused traffic experiments, ensure owner-managed legitimate distribution (human posting in targeted communities and/or manual metric uploads) is planned and executed early; relying solely on organic snippet fixes and minor on-site utility within a single 30-day window risks producing impressions without independently verifiable human traffic. | Status: recommended
 
+- 2026-08-10 | Evidence: data/metrics-snapshot.json.generatedAt 2026-08-10T06:43:04.999Z shows Google Search Console actualDataEndDate 2026-08-07 with impressions = 102 and clicks = 0; Cloudflare Web Analytics snapshot shows verifiedHumanVisits = 0 (range end 2026-08-10) | Confidence: high | Rule: When a small site emits impressions but records zero clicks and time is limited, owner-led distribution (owner posts prepared drafts and/or uploads manual metrics) is the highest-leverage action to obtain independently verifiable human visits. Agent-prepared drafts and on-site edits should be executed early and paired with owner posting to validate outcomes during short experiments. | Status: recommended
+
 ## Failed approaches not to repeat
 
 - None yet.
