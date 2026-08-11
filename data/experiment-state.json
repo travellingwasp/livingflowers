@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 102,
+      "impressions": 99,
       "clicks": 0,
       "indexedPages": 5,
       "queries": [
@@ -197,9 +197,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "best window direction for plants",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 1,
           "ctr": 0,
-          "position": 84
+          "position": 82
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -410,7 +410,7 @@
           "position": 49
         }
       ],
-      "lastApiCheck": "2026-08-10T06:43:04.999Z",
+      "lastApiCheck": "2026-08-11T06:05:51.251Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -418,7 +418,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-08-10T06:43:04.999Z",
+      "lastApiCheck": "2026-08-11T06:05:51.251Z",
       "ingestionStatus": "ok"
     }
   },
