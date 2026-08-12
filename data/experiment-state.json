@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 99,
+      "impressions": 96,
       "clicks": 0,
       "indexedPages": 5,
       "queries": [
@@ -259,6 +259,14 @@
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "indoor plants north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 80
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "is a north facing window good for plants",
           "clicks": 0,
           "impressions": 1,
@@ -317,9 +325,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "north west window",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 1,
           "ctr": 0,
-          "position": 66.66666666666667
+          "position": 67
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -386,14 +394,6 @@
           "position": 66.5
         },
         {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plants north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
-        },
-        {
           "page": "https://windowplantlab.com/plant-distance-calculator/",
           "query": "bulb planting calculator",
           "clicks": 0,
@@ -410,7 +410,7 @@
           "position": 49
         }
       ],
-      "lastApiCheck": "2026-08-11T06:05:51.251Z",
+      "lastApiCheck": "2026-08-12T06:44:35.264Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -418,7 +418,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-08-11T06:05:51.251Z",
+      "lastApiCheck": "2026-08-12T06:44:35.264Z",
       "ingestionStatus": "ok"
     }
   },
