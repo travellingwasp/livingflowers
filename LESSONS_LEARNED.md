@@ -112,6 +112,8 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 
 - 2026-08-16 | Evidence: data/metrics-snapshot.json.generatedAt 2026-08-16T05:45:33.602Z shows Google Search Console actualDataEndDate 2026-08-13 with impressions = 161 and clicks = 0; Cloudflare Web Analytics verifiedHumanVisits = 0 (range end 2026-08-16) | Confidence: high | Rule: For short, focused traffic experiments where a small site already emits impressions, the highest-leverage action to obtain independently verifiable human visits is respectful, owner-executed distribution in relevant communities (owner posts prepared drafts and/or uploads manual metrics). Agent-prepared drafts and on-site edits are necessary but not sufficient without owner action. | Status: recommended
 
+- 2026-08-17 | Evidence: data/metrics-snapshot.json.generatedAt 2026-08-17T05:52:20.843Z shows Google Search Console actualDataEndDate 2026-08-14 with impressions = 182 and clicks = 0; Cloudflare Web Analytics verifiedHumanVisits = 0 (range end 2026-08-17) | Confidence: high | Rule: For short, focused traffic experiments where a small site already emits impressions, the highest-leverage step to obtain independently verifiable human visits is respectful, owner-executed distribution in relevant communities (owner posts prepared drafts and/or uploads manual metrics tied to the post). Agent-prepared drafts and on-site improvements are necessary but not sufficient without owner action. | Status: recommended
+
 ## Failed approaches not to repeat
 
 - None yet.
