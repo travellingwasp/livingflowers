@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 284,
+      "impressions": 302,
       "clicks": 0,
       "indexedPages": 5,
       "queries": [
@@ -227,6 +227,14 @@
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
+          "query": "houseplants east facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 60
+        },
+        {
+          "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "houseplants for east facing window",
           "clicks": 0,
           "impressions": 4,
@@ -312,6 +320,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 95
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "best houseplants for north facing room",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 76
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -413,9 +429,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "houseplants for north facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 75.5
+          "position": 79.33333333333333
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -480,25 +496,9 @@
           "impressions": 1,
           "ctr": 0,
           "position": 61
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north east window plants",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 60.5
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north facing house plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 68
         }
       ],
-      "lastApiCheck": "2026-08-25T05:49:29.467Z",
+      "lastApiCheck": "2026-08-26T05:51:59.595Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-08-25T05:49:29.467Z",
+      "lastApiCheck": "2026-08-26T05:51:59.595Z",
       "ingestionStatus": "ok"
     }
   },
