@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-29T11:40:38.014Z",
+  "generatedAt": "2026-08-30T10:30:05.574Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-07-30",
-      "endDate": "2026-08-26"
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-27"
     },
-    "actualDataEndDate": "2026-08-26",
+    "actualDataEndDate": "2026-08-27",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 332,
+    "impressions": 354,
     "ctr": 0,
-    "position": 65.78614457831326,
+    "position": 65.954802259887,
     "indexedPages": 5,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-07-30",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 58.5
-      },
       {
         "date": "2026-07-31",
         "clicks": 0,
@@ -242,17 +235,16 @@
         "impressions": 10,
         "ctr": 0,
         "position": 55.8
+      },
+      {
+        "date": "2026-08-27",
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 67.66666666666667
       }
     ],
     "pageDailySeries": [
-      {
-        "date": "2026-07-30",
-        "page": "https://windowplantlab.com/north-facing-window-plants/",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 58.5
-      },
       {
         "date": "2026-07-31",
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -716,11 +708,75 @@
         "impressions": 1,
         "ctr": 0,
         "position": 8
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/about/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 56.42857142857143
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/editorial-policy/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/light-meter/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 36.5
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 69.11764705882354
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "date": "2026-08-27",
+        "page": "https://windowplantlab.com/privacy/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 3.32,
-      "atFivePercentCtr": 16.6,
+      "atOnePercentCtr": 3.54,
+      "atFivePercentCtr": 17.7,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -739,6 +795,14 @@
         "impressions": 1,
         "ctr": 0,
         "position": 62
+      },
+      {
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "query": "best plants for an east facing window",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 67
       },
       {
         "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -942,11 +1006,27 @@
       },
       {
         "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "query": "plants that like east facing windows",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 64
+      },
+      {
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
         "query": "what is an east facing window",
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 65
+      },
+      {
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "query": "what plants like east facing windows",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 68
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -979,6 +1059,14 @@
         "impressions": 2,
         "ctr": 0,
         "position": 74
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "best plant for north facing window",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 80.5
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1043,6 +1131,14 @@
         "impressions": 1,
         "ctr": 0,
         "position": 77
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "house plants for north facing window",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 78
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1144,9 +1240,9 @@
         "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "north facing plants indoor",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 78
+        "position": 76
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1192,9 +1288,9 @@
         "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "north facing window plants",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 9,
         "ctr": 0,
-        "position": 76.625
+        "position": 77.22222222222223
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1222,19 +1318,19 @@
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
-        "query": "north west window",
+        "query": "north west window plants",
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
-        "position": 67
+        "position": 71
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "north window plants",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 77
+        "position": 77.5
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1251,6 +1347,14 @@
         "impressions": 1,
         "ctr": 0,
         "position": 80
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "north-facing windows plants",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 69.5
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1278,19 +1382,11 @@
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
-        "query": "northwest facing window plants",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 50
-      },
-      {
-        "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "northwest window plants",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 66
+        "position": 67
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1352,9 +1448,9 @@
         "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "plants for north window",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 3,
         "ctr": 0,
-        "position": 79
+        "position": 79.33333333333333
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1403,6 +1499,14 @@
         "impressions": 2,
         "ctr": 0,
         "position": 80.5
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "pothos north facing window",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 69
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -1481,8 +1585,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-07-30T11:40:45.033Z",
-      "end": "2026-08-29T11:40:45.033Z"
+      "start": "2026-07-31T10:30:12.983Z",
+      "end": "2026-08-30T10:30:12.983Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -1491,7 +1595,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-08-29T11:40:46.498Z",
+    "checkedAt": "2026-08-30T10:30:14.745Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
