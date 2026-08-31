@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 354,
+      "impressions": 379,
       "clicks": 0,
       "indexedPages": 5,
       "queries": [
@@ -181,9 +181,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "east facing windows for plants",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 48
+          "position": 53.5
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -200,6 +200,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 73
+        },
+        {
+          "page": "https://windowplantlab.com/east-facing-window-plants/",
+          "query": "east window houseplants",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 61.5
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -293,9 +301,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "plants for east facing window",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 5,
           "ctr": 0,
-          "position": 61.25
+          "position": 64.2
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -344,6 +352,14 @@
           "impressions": 2,
           "ctr": 0,
           "position": 68
+        },
+        {
+          "page": "https://windowplantlab.com/light-meter/",
+          "query": "light measurement for plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 79
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -477,28 +493,12 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "indoor plant north facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 82.5
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "indoor plants for north facing window",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 73
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "indoor plants north facing window",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 79.5
+          "position": 83.66666666666667
         }
       ],
-      "lastApiCheck": "2026-08-30T10:30:05.574Z",
+      "lastApiCheck": "2026-08-31T11:37:54.113Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-08-30T10:30:05.574Z",
+      "lastApiCheck": "2026-08-31T11:37:54.113Z",
       "ingestionStatus": "ok"
     }
   },
