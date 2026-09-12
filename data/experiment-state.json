@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 394,
+      "impressions": 384,
       "clicks": 0,
       "indexedPages": 5,
       "queries": [
@@ -221,9 +221,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "east-facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 62.5
+          "position": 74
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -245,17 +245,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "houseplants for east facing window",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 62.666666666666664
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "i have an east facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 51
+          "position": 62.2
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -496,9 +488,17 @@
           "impressions": 2,
           "ctr": 0,
           "position": 79.5
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "indoor plants north facing window",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 80
         }
       ],
-      "lastApiCheck": "2026-09-11T09:46:25.230Z",
+      "lastApiCheck": "2026-09-12T09:24:51.454Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-09-11T09:46:25.230Z",
+      "lastApiCheck": "2026-09-12T09:24:51.454Z",
       "ingestionStatus": "ok"
     }
   },
