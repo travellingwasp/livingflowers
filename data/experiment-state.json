@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 384,
+      "impressions": 368,
       "clicks": 0,
       "indexedPages": 5,
       "queries": [
@@ -224,6 +224,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 74
+        },
+        {
+          "page": "https://windowplantlab.com/east-facing-window-plants/",
+          "query": "east-facing window plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 62
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -397,17 +405,17 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "best plants for north facing window",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 5,
           "ctr": 0,
-          "position": 70.25
+          "position": 70.6
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "best plants for north facing windows",
+          "query": "best plants for north-facing windows",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 79
+          "position": 65
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -488,17 +496,9 @@
           "impressions": 2,
           "ctr": 0,
           "position": 79.5
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "indoor plants north facing window",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 80
         }
       ],
-      "lastApiCheck": "2026-09-12T09:24:51.454Z",
+      "lastApiCheck": "2026-09-13T10:19:54.610Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-09-12T09:24:51.454Z",
+      "lastApiCheck": "2026-09-13T10:19:54.610Z",
       "ingestionStatus": "ok"
     }
   },
