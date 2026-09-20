@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 289,
+      "impressions": 278,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -125,17 +125,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "best plants for east facing window",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 2,
           "ctr": 0,
-          "position": 56.75
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "east facing house plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 51
+          "position": 56.5
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -496,9 +488,17 @@
           "impressions": 2,
           "ctr": 0,
           "position": 71.5
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 79
         }
       ],
-      "lastApiCheck": "2026-09-19T09:34:15.464Z",
+      "lastApiCheck": "2026-09-20T09:50:17.618Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-09-19T09:34:15.464Z",
+      "lastApiCheck": "2026-09-20T09:50:17.618Z",
       "ingestionStatus": "ok"
     }
   },
