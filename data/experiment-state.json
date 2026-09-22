@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 264,
+      "impressions": 247,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -101,9 +101,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "are east facing windows good for plants",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 67
+          "position": 65
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -157,9 +157,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "east window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 80
+          "position": 87
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -219,19 +219,11 @@
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "plant for east facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 55
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "plants for east facing window",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 69.25
+          "position": 72
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -245,9 +237,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "plants for east-facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 61
+          "position": 65
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -325,9 +317,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "best plants for north facing window",
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 4,
           "ctr": 0,
-          "position": 72
+          "position": 72.75
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -356,14 +348,6 @@
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "best plants north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 77
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "house plant for north facing window",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -485,9 +469,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "north facing window plants",
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 80.125
+          "position": 80.14285714285714
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -496,9 +480,25 @@
           "impressions": 1,
           "ctr": 0,
           "position": 87
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "north west window plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 71
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "north window",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 71
         }
       ],
-      "lastApiCheck": "2026-09-21T10:47:24.576Z",
+      "lastApiCheck": "2026-09-22T10:02:17.348Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-09-21T10:47:24.576Z",
+      "lastApiCheck": "2026-09-22T10:02:17.348Z",
       "ingestionStatus": "ok"
     }
   },
