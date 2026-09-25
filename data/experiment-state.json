@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 215,
+      "impressions": 196,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -133,17 +133,17 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "east facing window",
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 7,
           "ctr": 0,
-          "position": 70
+          "position": 70.85714285714286
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "east facing window plants",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 4,
           "ctr": 0,
-          "position": 66.16666666666667
+          "position": 69.75
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -168,14 +168,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 61.5
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "east windows",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 59
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -237,9 +229,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "what is an east facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 72
+          "position": 79
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -373,9 +365,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "indoor plants for north facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 79.5
+          "position": 82
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -392,22 +384,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 70
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "is north facing window good for plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 65
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north east facing window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 67
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -496,9 +472,33 @@
           "impressions": 1,
           "ctr": 0,
           "position": 71
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "northwest window plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 68
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "plants for a north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 74
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "plants for north facing window",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 75.5
         }
       ],
-      "lastApiCheck": "2026-09-24T10:05:29.071Z",
+      "lastApiCheck": "2026-09-25T10:14:04.205Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -506,7 +506,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-09-24T10:05:29.071Z",
+      "lastApiCheck": "2026-09-25T10:14:04.205Z",
       "ingestionStatus": "ok"
     }
   },
