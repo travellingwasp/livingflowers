@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 88,
+      "impressions": 86,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -165,9 +165,9 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "houseplants for east facing window",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 59.5
+          "position": 56.333333333333336
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -370,7 +370,7 @@
           "position": 81.5
         }
       ],
-      "lastApiCheck": "2026-10-02T11:08:37.758Z",
+      "lastApiCheck": "2026-10-03T10:26:37.346Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -378,7 +378,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-10-02T11:08:37.758Z",
+      "lastApiCheck": "2026-10-03T10:26:37.346Z",
       "ingestionStatus": "ok"
     }
   },
