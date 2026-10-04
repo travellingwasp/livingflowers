@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 86,
+      "impressions": 81,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -194,14 +194,6 @@
           "position": 65
         },
         {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "plants that like east facing windows",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 73
-        },
-        {
           "page": "https://windowplantlab.com/light-meter/",
           "query": "bulb calculator",
           "clicks": 0,
@@ -293,9 +285,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "north facing window plants",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 79.5
+          "position": 78.8
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -357,20 +349,20 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "plants for north window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 79
+          "position": 78
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "plants in north facing window",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 81.5
+          "position": 80
         }
       ],
-      "lastApiCheck": "2026-10-03T10:26:37.346Z",
+      "lastApiCheck": "2026-10-04T11:08:21.243Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -378,7 +370,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-10-03T10:26:37.346Z",
+      "lastApiCheck": "2026-10-04T11:08:21.243Z",
       "ingestionStatus": "ok"
     }
   },
