@@ -93,9 +93,9 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 96,
+      "impressions": 98,
       "clicks": 0,
-      "indexedPages": 6,
+      "indexedPages": 5,
       "queries": [
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -141,9 +141,17 @@
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "east facing window plants",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
           "position": 69
+        },
+        {
+          "page": "https://windowplantlab.com/east-facing-window-plants/",
+          "query": "east facing windows plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 78
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -168,6 +176,14 @@
           "impressions": 2,
           "ctr": 0,
           "position": 63.5
+        },
+        {
+          "page": "https://windowplantlab.com/east-facing-window-plants/",
+          "query": "east-facing windows plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 74
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -200,14 +216,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 65
-        },
-        {
-          "page": "https://windowplantlab.com/light-meter/",
-          "query": "bulb calculator",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 74
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -418,7 +426,7 @@
           "position": 73
         }
       ],
-      "lastApiCheck": "2026-10-05T12:19:26.274Z",
+      "lastApiCheck": "2026-10-06T12:03:45.753Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -426,7 +434,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-10-05T12:19:26.274Z",
+      "lastApiCheck": "2026-10-06T12:03:45.753Z",
       "ingestionStatus": "ok"
     }
   },
