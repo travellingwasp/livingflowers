@@ -80,9 +80,16 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
   - Operational rule: When API access is infeasible, upload a vetted manual metrics snapshot weekly (or daily if available) using the sample schema. The daily agent will treat uploaded snapshots as authoritative for the run day.
   - Status: active
 
+- First observed date: 2026-10-06
+  - Evidence: data/metrics-snapshot.json.generatedAt 2026-10-06T12:03:45.753Z shows GSC actualDataEndDate 2026-10-03 with impressions = 98 and clicks = 0; Cloudflare Web Analytics verifiedHumanVisits = 0 | Confidence: high | Rule: For small sites that already emit measurable search impressions, the single highest-leverage action to obtain independently verifiable human visits is respectful, owner-executed, community-first distribution linking to clear utilities (and/or uploading a manual metrics snapshot tied to the post). Agent-only repository edits without owner distribution are unlikely to produce independently verifiable human visits quickly. | Status: recommended
+
 ## Final experiment summary lesson
 
 - 2026-10-07 | Evidence: data/metrics-snapshot.json.generatedAt 2026-10-07T11:49:23.631Z shows Google Search Console authoritative actualDataEndDate 2026-10-04 with impressions = 93 and clicks = 0; Cloudflare Web Analytics verifiedHumanVisits = 0 (snapshot range end ≈ 2026-10-07) | Confidence: high | Rule: For short, focused traffic experiments, ensure owner-managed legitimate distribution (human posting in targeted communities and/or manual metric uploads) is planned and executed early; relying solely on organic snippet fixes and minor on-site utility within a single 30-day window risks producing impressions without independently verifiable human traffic. | Status: recommended
+
+## New reusable lesson (appended 2026-10-10)
+
+- 2026-10-10 | Evidence: data/metrics-snapshot.json.generatedAt 2026-10-10T11:12:43.198Z shows Google Search Console authoritative actualDataEndDate 2026-10-06 with impressions = 89 and clicks = 0; Cloudflare Web Analytics verifiedHumanVisits = 0 (snapshot range end ≈ 2026-10-10) | Confidence: high | Rule: For small sites that already emit measurable Search impressions, owner-executed, community-first distribution (and/or uploading a manual metrics snapshot tied to the public post/referrer) is the highest-leverage missing action to obtain independently verifiable human visits. Agent-only repository edits without owner distribution are unlikely to produce independently verifiable human visits quickly. | Status: recommended
 
 ## Failed approaches not to repeat
 
@@ -93,10 +100,6 @@ Reusable operational lessons only. Do not record mere task completion as a lesso
 - Produce crawl artifacts and canonical mappings immediately when indexing is the primary bottleneck; do not wait for owner deployment to create these repository-level files.
 - When metric ingestion is delayed, prepare snippet-ready metadata (meta title/description) and document a manual import path for metrics to enable data-driven daily decisions.
 - When pages show impressions but zero clicks, updating and clarifying meta title and description to match query intent and state concrete utility is a low-effort action that should be tried before producing new pages.
-
-## New reusable lesson (appended 2026-10-09)
-
-- 2026-10-09 | Evidence: data/metrics-snapshot.json.generatedAt 2026-10-09T11:56:08.650Z shows Google Search Console authoritative actualDataEndDate 2026-10-06 with impressions = 93 and clicks = 0; Cloudflare Web Analytics verifiedHumanVisits = 0 (snapshot range end ≈ 2026-10-09) | Confidence: high | Rule: For small sites that already emit measurable Search impressions, the single highest-leverage action to obtain independently verifiable human visits is respectful, owner-executed, community-first distribution linking to clear utilities (and/or uploading a manual metrics snapshot tied to the public post/referrer). Agent-only repository edits without owner distribution are unlikely to produce independently verifiable human visits quickly. | Status: recommended
 
 ## Final operational note
 
