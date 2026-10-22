@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-21T10:14:38.645Z",
+  "generatedAt": "2026-10-22T10:15:45.998Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-09-21",
-      "endDate": "2026-10-18"
+      "startDate": "2026-09-22",
+      "endDate": "2026-10-19"
     },
-    "actualDataEndDate": "2026-10-18",
+    "actualDataEndDate": "2026-10-19",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 75,
+    "impressions": 78,
     "ctr": 0,
-    "position": 56.77333333333333,
+    "position": 56.794871794871796,
     "indexedPages": 6,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-09-21",
-        "clicks": 0,
-        "impressions": 0,
-        "ctr": 0,
-        "position": 0
-      },
       {
         "date": "2026-09-22",
         "clicks": 0,
@@ -242,6 +235,13 @@
         "impressions": 1,
         "ctr": 0,
         "position": 2
+      },
+      {
+        "date": "2026-10-19",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 57.333333333333336
       }
     ],
     "pageDailySeries": [
@@ -596,11 +596,27 @@
         "impressions": 1,
         "ctr": 0,
         "position": 2
+      },
+      {
+        "date": "2026-10-19",
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 53
+      },
+      {
+        "date": "2026-10-19",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 59.5
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.75,
-      "atFivePercentCtr": 3.75,
+      "atOnePercentCtr": 0.78,
+      "atFivePercentCtr": 3.9,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -715,6 +731,14 @@
         "impressions": 1,
         "ctr": 0,
         "position": 60
+      },
+      {
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "query": "spider plant east facing window",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 53
       },
       {
         "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -846,6 +870,14 @@
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "northwest facing window plants",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 72
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "northwest window",
         "clicks": 0,
         "impressions": 1,
@@ -905,8 +937,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-09-21T10:14:45.585Z",
-      "end": "2026-10-21T10:14:45.585Z"
+      "start": "2026-09-22T10:15:53.075Z",
+      "end": "2026-10-22T10:15:53.075Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -915,7 +947,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-10-21T10:14:48.484Z",
+    "checkedAt": "2026-10-22T10:15:56.261Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
