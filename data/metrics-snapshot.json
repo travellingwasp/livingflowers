@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-22T10:15:45.998Z",
+  "generatedAt": "2026-10-23T10:09:03.316Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-09-22",
-      "endDate": "2026-10-19"
+      "startDate": "2026-09-23",
+      "endDate": "2026-10-20"
     },
-    "actualDataEndDate": "2026-10-19",
+    "actualDataEndDate": "2026-10-20",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 78,
+    "impressions": 80,
     "ctr": 0,
-    "position": 56.794871794871796,
+    "position": 56.7375,
     "indexedPages": 6,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-09-22",
-        "clicks": 0,
-        "impressions": 0,
-        "ctr": 0,
-        "position": 0
-      },
       {
         "date": "2026-09-23",
         "clicks": 0,
@@ -242,6 +235,13 @@
         "impressions": 3,
         "ctr": 0,
         "position": 57.333333333333336
+      },
+      {
+        "date": "2026-10-20",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 54.5
       }
     ],
     "pageDailySeries": [
@@ -612,11 +612,27 @@
         "impressions": 2,
         "ctr": 0,
         "position": 59.5
+      },
+      {
+        "date": "2026-10-20",
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "date": "2026-10-20",
+        "page": "https://windowplantlab.com/low-light-plant-placement-checklist/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 98
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.78,
-      "atFivePercentCtr": 3.9,
+      "atOnePercentCtr": 0.8,
+      "atFivePercentCtr": 4,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -937,8 +953,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-09-22T10:15:53.075Z",
-      "end": "2026-10-22T10:15:53.075Z"
+      "start": "2026-09-23T10:09:10.230Z",
+      "end": "2026-10-23T10:09:10.230Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -947,7 +963,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-10-22T10:15:56.261Z",
+    "checkedAt": "2026-10-23T10:09:11.982Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
