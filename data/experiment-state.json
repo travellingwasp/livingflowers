@@ -93,18 +93,10 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 83,
+      "impressions": 82,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "are east facing windows good for plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 46
-        },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "best plants for east facing window",
@@ -226,12 +218,12 @@
           "position": 2
         },
         {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "are north facing windows good for plants",
+          "page": "https://windowplantlab.com/light-meter/",
+          "query": "houseplant light calculator",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 51
+          "position": 80
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -357,9 +349,9 @@
           "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "plants for north facing windows",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 86
+          "position": 79
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -402,7 +394,7 @@
           "position": 77
         }
       ],
-      "lastApiCheck": "2026-10-24T09:35:12.296Z",
+      "lastApiCheck": "2026-10-25T09:51:09.546Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -410,7 +402,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-10-24T09:35:12.296Z",
+      "lastApiCheck": "2026-10-25T09:51:09.546Z",
       "ingestionStatus": "ok"
     }
   },
