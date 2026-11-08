@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 64,
+      "impressions": 66,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -139,19 +139,19 @@
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "east window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 50
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
           "query": "houseplants for east facing window",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
           "position": 63.5
+        },
+        {
+          "page": "https://windowplantlab.com/east-facing-window-plants/",
+          "query": "na vychod",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 14
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -226,7 +226,7 @@
           "position": 72
         }
       ],
-      "lastApiCheck": "2026-11-07T11:45:48.365Z",
+      "lastApiCheck": "2026-11-08T11:57:51.213Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -234,7 +234,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-07T11:45:48.365Z",
+      "lastApiCheck": "2026-11-08T11:57:51.213Z",
       "ingestionStatus": "ok"
     }
   },
