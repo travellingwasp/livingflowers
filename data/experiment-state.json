@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 72,
+      "impressions": 75,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -234,7 +234,7 @@
           "position": 86
         }
       ],
-      "lastApiCheck": "2026-11-12T13:48:35.346Z",
+      "lastApiCheck": "2026-11-13T13:10:03.481Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -242,7 +242,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-12T13:48:35.346Z",
+      "lastApiCheck": "2026-11-13T13:10:03.481Z",
       "ingestionStatus": "ok"
     }
   },
