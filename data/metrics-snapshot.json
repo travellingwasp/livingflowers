@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-12T13:48:35.346Z",
+  "generatedAt": "2026-11-13T13:10:03.481Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-10-13",
-      "endDate": "2026-11-09"
+      "startDate": "2026-10-14",
+      "endDate": "2026-11-10"
     },
-    "actualDataEndDate": "2026-11-09",
+    "actualDataEndDate": "2026-11-10",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 72,
+    "impressions": 75,
     "ctr": 0,
-    "position": 46.06944444444444,
+    "position": 46.50666666666667,
     "indexedPages": 6,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-10-13",
-        "clicks": 0,
-        "impressions": 0,
-        "ctr": 0,
-        "position": 0
-      },
       {
         "date": "2026-10-14",
         "clicks": 0,
@@ -242,6 +235,13 @@
         "impressions": 4,
         "ctr": 0,
         "position": 62
+      },
+      {
+        "date": "2026-11-10",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 57
       }
     ],
     "pageDailySeries": [
@@ -652,11 +652,27 @@
         "impressions": 2,
         "ctr": 0,
         "position": 93
+      },
+      {
+        "date": "2026-11-10",
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 44.5
+      },
+      {
+        "date": "2026-11-10",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 82
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.72,
-      "atFivePercentCtr": 3.6,
+      "atOnePercentCtr": 0.75,
+      "atFivePercentCtr": 3.75,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -801,8 +817,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-10-13T13:48:43.456Z",
-      "end": "2026-11-12T13:48:43.456Z"
+      "start": "2026-10-14T13:10:10.497Z",
+      "end": "2026-11-13T13:10:10.497Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -811,7 +827,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-11-12T13:48:46.776Z",
+    "checkedAt": "2026-11-13T13:10:13.101Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
