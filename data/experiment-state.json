@@ -234,7 +234,7 @@
           "position": 86
         }
       ],
-      "lastApiCheck": "2026-11-13T13:10:03.481Z",
+      "lastApiCheck": "2026-11-14T12:14:37.547Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -242,7 +242,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-13T13:10:03.481Z",
+      "lastApiCheck": "2026-11-14T12:14:37.547Z",
       "ingestionStatus": "ok"
     }
   },
