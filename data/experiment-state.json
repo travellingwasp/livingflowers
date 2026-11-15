@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 75,
+      "impressions": 79,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -232,9 +232,17 @@
           "impressions": 1,
           "ctr": 0,
           "position": 86
+        },
+        {
+          "page": "https://windowplantlab.com/plant-distance-calculator/",
+          "query": "plant estimator",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 97
         }
       ],
-      "lastApiCheck": "2026-11-14T12:14:37.547Z",
+      "lastApiCheck": "2026-11-15T12:47:13.002Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -242,7 +250,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-14T12:14:37.547Z",
+      "lastApiCheck": "2026-11-15T12:47:13.002Z",
       "ingestionStatus": "ok"
     }
   },
