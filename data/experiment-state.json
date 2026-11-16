@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 79,
+      "impressions": 81,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -211,11 +211,27 @@
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 76
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "north facing window plants",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 4,
           "ctr": 0,
-          "position": 94.33333333333333
+          "position": 91
+        },
+        {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "north-facing window plants",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 81
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
@@ -242,7 +258,7 @@
           "position": 97
         }
       ],
-      "lastApiCheck": "2026-11-15T12:47:13.002Z",
+      "lastApiCheck": "2026-11-16T13:42:39.275Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -250,7 +266,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-15T12:47:13.002Z",
+      "lastApiCheck": "2026-11-16T13:42:39.275Z",
       "ingestionStatus": "ok"
     }
   },
