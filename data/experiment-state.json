@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 76,
+      "impressions": 77,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -160,14 +160,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 53
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "what about fall",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
         },
         {
           "page": "https://windowplantlab.com/light-meter/",
@@ -242,6 +234,14 @@
           "position": 86
         },
         {
+          "page": "https://windowplantlab.com/north-facing-window-plants/",
+          "query": "plants for north facing window",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 84
+        },
+        {
           "page": "https://windowplantlab.com/plant-distance-calculator/",
           "query": "plant estimator",
           "clicks": 0,
@@ -250,7 +250,7 @@
           "position": 97
         }
       ],
-      "lastApiCheck": "2026-11-17T14:30:47.740Z",
+      "lastApiCheck": "2026-11-18T14:06:30.679Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -258,7 +258,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-17T14:30:47.740Z",
+      "lastApiCheck": "2026-11-18T14:06:30.679Z",
       "ingestionStatus": "ok"
     }
   },
