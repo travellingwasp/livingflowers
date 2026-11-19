@@ -147,19 +147,19 @@
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "plants for east facing window",
+          "query": "plant for east facing window",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 43
+          "position": 61
         },
         {
           "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "spider plant east facing window",
+          "query": "plants for east facing window",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 53
+          "position": 52.5
         },
         {
           "page": "https://windowplantlab.com/light-meter/",
@@ -219,14 +219,6 @@
         },
         {
           "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "northwest facing window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
           "query": "plants for a north facing window",
           "clicks": 0,
           "impressions": 1,
@@ -250,7 +242,7 @@
           "position": 97
         }
       ],
-      "lastApiCheck": "2026-11-18T14:06:30.679Z",
+      "lastApiCheck": "2026-11-19T14:28:29.144Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -258,7 +250,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-18T14:06:30.679Z",
+      "lastApiCheck": "2026-11-19T14:28:29.144Z",
       "ingestionStatus": "ok"
     }
   },
