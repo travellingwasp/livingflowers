@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-19T14:28:29.144Z",
+  "generatedAt": "2026-11-20T14:04:46.756Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-10-20",
-      "endDate": "2026-11-16"
+      "startDate": "2026-10-21",
+      "endDate": "2026-11-17"
     },
-    "actualDataEndDate": "2026-11-16",
+    "actualDataEndDate": "2026-11-17",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 77,
+    "impressions": 76,
     "ctr": 0,
-    "position": 46.83116883116883,
+    "position": 46.81578947368421,
     "indexedPages": 6,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-10-20",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 54.5
-      },
       {
         "date": "2026-10-21",
         "clicks": 0,
@@ -242,25 +235,16 @@
         "impressions": 3,
         "ctr": 0,
         "position": 41.333333333333336
+      },
+      {
+        "date": "2026-11-17",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 61
       }
     ],
     "pageDailySeries": [
-      {
-        "date": "2026-10-20",
-        "page": "https://windowplantlab.com/east-facing-window-plants/",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 11
-      },
-      {
-        "date": "2026-10-20",
-        "page": "https://windowplantlab.com/low-light-plant-placement-checklist/",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 98
-      },
       {
         "date": "2026-10-21",
         "page": "https://windowplantlab.com/",
@@ -716,11 +700,19 @@
         "impressions": 3,
         "ctr": 0,
         "position": 41.333333333333336
+      },
+      {
+        "date": "2026-11-17",
+        "page": "https://windowplantlab.com/east-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 61
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.77,
-      "atFivePercentCtr": 3.85,
+      "atOnePercentCtr": 0.76,
+      "atFivePercentCtr": 3.8,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -752,9 +744,9 @@
         "page": "https://windowplantlab.com/east-facing-window-plants/",
         "query": "east facing window plants",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 3,
         "ctr": 0,
-        "position": 53.5
+        "position": 56
       },
       {
         "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -873,8 +865,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-10-20T14:28:36.496Z",
-      "end": "2026-11-19T14:28:36.496Z"
+      "start": "2026-10-21T14:06:27.027Z",
+      "end": "2026-11-20T14:06:27.027Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -883,7 +875,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-11-19T14:28:39.187Z",
+    "checkedAt": "2026-11-20T14:06:29.466Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
