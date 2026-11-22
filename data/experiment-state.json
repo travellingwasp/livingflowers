@@ -93,7 +93,7 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 71,
+      "impressions": 67,
       "clicks": 0,
       "indexedPages": 6,
       "queries": [
@@ -160,14 +160,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 52.5
-        },
-        {
-          "page": "https://windowplantlab.com/light-meter/",
-          "query": "houseplant light calculator",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 80
         },
         {
           "page": "https://windowplantlab.com/light-meter/",
@@ -242,7 +234,7 @@
           "position": 97
         }
       ],
-      "lastApiCheck": "2026-11-21T13:30:41.341Z",
+      "lastApiCheck": "2026-11-22T13:24:05.450Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -250,7 +242,7 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-21T13:30:41.341Z",
+      "lastApiCheck": "2026-11-22T13:24:05.450Z",
       "ingestionStatus": "ok"
     }
   },

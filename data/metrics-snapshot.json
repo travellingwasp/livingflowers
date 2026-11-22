@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-21T13:30:41.341Z",
+  "generatedAt": "2026-11-22T13:24:05.450Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-10-22",
-      "endDate": "2026-11-18"
+      "startDate": "2026-10-23",
+      "endDate": "2026-11-19"
     },
-    "actualDataEndDate": "2026-11-18",
+    "actualDataEndDate": "2026-11-19",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 71,
+    "impressions": 67,
     "ctr": 0,
-    "position": 47.88732394366197,
+    "position": 47.208955223880594,
     "indexedPages": 6,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-10-22",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 59.25
-      },
       {
         "date": "2026-10-23",
         "clicks": 0,
@@ -242,25 +235,16 @@
         "impressions": 0,
         "ctr": 0,
         "position": 0
+      },
+      {
+        "date": "2026-11-19",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
       }
     ],
     "pageDailySeries": [
-      {
-        "date": "2026-10-22",
-        "page": "https://windowplantlab.com/light-meter/",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 54.666666666666664
-      },
-      {
-        "date": "2026-10-22",
-        "page": "https://windowplantlab.com/north-facing-window-plants/",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 73
-      },
       {
         "date": "2026-10-23",
         "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -639,8 +623,8 @@
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.71,
-      "atFivePercentCtr": 3.55,
+      "atOnePercentCtr": 0.67,
+      "atFivePercentCtr": 3.35,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -707,14 +691,6 @@
         "impressions": 2,
         "ctr": 0,
         "position": 52.5
-      },
-      {
-        "page": "https://windowplantlab.com/light-meter/",
-        "query": "houseplant light calculator",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 80
       },
       {
         "page": "https://windowplantlab.com/light-meter/",
@@ -793,8 +769,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-10-22T13:30:48.299Z",
-      "end": "2026-11-21T13:30:48.299Z"
+      "start": "2026-10-23T13:24:12.483Z",
+      "end": "2026-11-22T13:24:12.483Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -803,7 +779,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-11-21T13:30:51.529Z",
+    "checkedAt": "2026-11-22T13:24:14.901Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
