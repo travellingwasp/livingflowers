@@ -8,7 +8,8 @@
     "currentDay": 30,
     "domain": "windowplantlab.com",
     "siteUrlEnvVar": "SITE_URL",
-    "status": "ended"
+    "status": "ended",
+    "lastRun": "2026-11-26"
   },
   "setup": {
     "githubRepository": "https://github.com/travellingwasp/livingflowers",
@@ -93,124 +94,11 @@
     },
     "googleSearchConsole": {
       "apiConfigured": true,
-      "impressions": 56,
+      "impressions": 54,
       "clicks": 0,
       "indexedPages": 6,
-      "queries": [
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "best plants for east facing window",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 22
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "east facing window good for plants",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 68
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "east facing window plants",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 53
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "houseplants for east facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 62
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "na vychod",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 14
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "plant for east facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "page": "https://windowplantlab.com/east-facing-window-plants/",
-          "query": "plants for east facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 62
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "best plants for north facing window",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 91
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 76
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north facing window plants",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 92.33333333333333
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "north-facing window plants",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 81
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plants for a north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 86
-        },
-        {
-          "page": "https://windowplantlab.com/north-facing-window-plants/",
-          "query": "plants for north facing window",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84
-        },
-        {
-          "page": "https://windowplantlab.com/plant-distance-calculator/",
-          "query": "plant estimator",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 97
-        }
-      ],
-      "lastApiCheck": "2026-11-25T15:41:13.960Z",
+      "queries": [],
+      "lastApiCheck": "2026-11-26T15:22:51.676Z",
       "ingestionStatus": "ok"
     },
     "cloudflareWebAnalytics": {
@@ -218,20 +106,20 @@
       "verifiedHumanVisits": 0,
       "topPages": [],
       "referrers": [],
-      "lastApiCheck": "2026-11-25T15:41:13.960Z",
+      "lastApiCheck": "2026-11-26T15:22:51.676Z",
       "ingestionStatus": "ok"
     }
   },
   "lastAction": {
-    "date": "2026-08-06",
+    "date": "2026-11-26",
     "option": "J",
-    "summary": "Final report: experiment ended Day 30/30. Site indexed and emitted impressions but no independently verifiable human visits (GSC clicks=0, Cloudflare verified visits=0) during the window. Owner-led distribution remained unexecuted.",
-    "validationMetric": "Final authoritative snapshot referenced in metrics.finalSnapshot; no clicks and zero verified human visits recorded."
+    "summary": "Final report: experiment previously ended (30-day window closed). Latest authoritative snapshot (GSC actualDataEndDate 2026-11-23) shows recurring impressions (54) but zero GSC clicks and zero Cloudflare-verified human visits. Owner-executed distribution and/or a manual metrics upload remains the single highest-leverage next step for obtaining independently verifiable human visits.",
+    "validationMetric": "Latest authoritative snapshot referenced in data/metrics-snapshot.json (generatedAt 2026-11-26T15:22:51.676Z); clicks=0; Cloudflare verified visits=0."
   },
   "ownerGated": [
     "Add Cloudflare API metrics access or manually import Cloudflare Web Analytics metrics (see data/manual-metrics-import.json for sample).",
     "Add Google Search Console API access or manually import Search Console metrics (see data/manual-metrics-import.json for sample).",
-    "If post-experiment follow-up is desired, the owner should post a prepared distribution draft and upload a manual metrics snapshot so the agent can evaluate post-experiment distribution effectiveness."
+    "If post-experiment follow-up is desired, the owner should publish a prepared distribution draft and upload a manual metrics snapshot so the agent can evaluate post-experiment distribution effectiveness."
   ],
   "technicalDebt": [
     "Cloudflare Web Analytics metrics were not fetched automatically early in the experiment in a usable way; manual import path was recommended.",
@@ -239,7 +127,7 @@
   ],
   "finalReport": {
     "published": true,
-    "date": "2026-10-26",
-    "summary": "Experiment completed: site indexed and emitted recurring Search impressions (GSC impressions = 87 in the latest authoritative snapshot) but recorded zero GSC clicks and zero Cloudflare-verified human visits during the experiment window. Owner-executed distribution (or manual metrics upload) is the single highest-leverage next action for obtaining independently verifiable human traffic."
+    "date": "2026-11-26",
+    "summary": "Experiment completed: site indexed and emitted recurring Search impressions but recorded zero GSC clicks and zero Cloudflare-verified human visits during the official 30-day experiment window. Owner-executed distribution (or manual metrics upload tied to a public post) is the highest-leverage next step to obtain independently verifiable human traffic. Latest authoritative snapshot (GSC actualDataEndDate 2026-11-23) shows impressions = 54 and clicks = 0."
   }
 }
