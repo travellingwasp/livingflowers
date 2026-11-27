@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-26T15:22:51.676Z",
+  "generatedAt": "2026-11-27T15:09:59.562Z",
   "siteUrl": "https://windowplantlab.com/",
   "googleSearchConsole": {
     "status": "ok",
     "range": {
-      "startDate": "2026-10-27",
-      "endDate": "2026-11-23"
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-24"
     },
-    "actualDataEndDate": "2026-11-23",
+    "actualDataEndDate": "2026-11-24",
     "dataLagDays": 3,
     "clicks": 0,
-    "impressions": 54,
+    "impressions": 52,
     "ctr": 0,
-    "position": 46.74074074074074,
+    "position": 51.07692307692308,
     "indexedPages": 6,
     "inspections": [
       {
@@ -47,13 +47,6 @@
       }
     ],
     "dailySeries": [
-      {
-        "date": "2026-10-27",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 17.833333333333332
-      },
       {
         "date": "2026-10-28",
         "clicks": 0,
@@ -242,25 +235,16 @@
         "impressions": 3,
         "ctr": 0,
         "position": 69.66666666666667
+      },
+      {
+        "date": "2026-11-24",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 59.75
       }
     ],
     "pageDailySeries": [
-      {
-        "date": "2026-10-27",
-        "page": "https://windowplantlab.com/east-facing-window-plants/",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 7.666666666666667
-      },
-      {
-        "date": "2026-10-27",
-        "page": "https://windowplantlab.com/plant-distance-calculator/",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 28
-      },
       {
         "date": "2026-10-28",
         "page": "https://windowplantlab.com/east-facing-window-plants/",
@@ -556,11 +540,27 @@
         "impressions": 1,
         "ctr": 0,
         "position": 96
+      },
+      {
+        "date": "2026-11-24",
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 78.66666666666667
+      },
+      {
+        "date": "2026-11-24",
+        "page": "https://windowplantlab.com/plant-distance-calculator/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
       }
     ],
     "clickExpectation": {
-      "atOnePercentCtr": 0.54,
-      "atFivePercentCtr": 2.7,
+      "atOnePercentCtr": 0.52,
+      "atFivePercentCtr": 2.6,
       "note": "Scenario values, not forecasts. Use them to avoid treating statistically expected zero clicks as a defect."
     },
     "topPageQueries": [
@@ -630,6 +630,14 @@
       },
       {
         "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "are north facing windows good for plants",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 76
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "best plants for north facing window",
         "clicks": 0,
         "impressions": 1,
@@ -672,9 +680,17 @@
         "page": "https://windowplantlab.com/north-facing-window-plants/",
         "query": "plants for north facing window",
         "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 82
+      },
+      {
+        "page": "https://windowplantlab.com/north-facing-window-plants/",
+        "query": "plants for north facing windows",
+        "clicks": 0,
         "impressions": 1,
         "ctr": 0,
-        "position": 84
+        "position": 80
       },
       {
         "page": "https://windowplantlab.com/plant-distance-calculator/",
@@ -689,8 +705,8 @@
   "cloudflareWebAnalytics": {
     "status": "ok",
     "range": {
-      "start": "2026-10-27T15:22:58.653Z",
-      "end": "2026-11-26T15:22:58.653Z"
+      "start": "2026-10-28T15:10:06.680Z",
+      "end": "2026-11-27T15:10:06.680Z"
     },
     "verifiedHumanPageviews": 0,
     "verifiedHumanVisits": 0,
@@ -699,7 +715,7 @@
   },
   "liveSiteChecks": {
     "status": "ok",
-    "checkedAt": "2026-11-26T15:23:04.335Z",
+    "checkedAt": "2026-11-27T15:10:09.889Z",
     "pages": [
       {
         "url": "https://windowplantlab.com/",
